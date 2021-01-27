@@ -3,14 +3,13 @@
 <!-- 3. Get Question -->
 <template>
   <section>
-    {{ media }}
     <languages id="languages" />
     <welcome id="welcome" />
     <user id="user" />
     <div class="h-screen flex flex-col">
       <question id="question" />
-      <div
-        id="media"
+      <div 
+        id="media" 
         class="relative">
         <session class="absolute" />
         <media class="absolute" />
