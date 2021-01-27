@@ -1,19 +1,18 @@
 <template>
-  <div
-    v-if="media"
+  <div 
+    v-if="media && !finishedSession" 
     class="pmcp-grid">
-    <div
-      v-for="(i, key) in media"
+    <div 
+      v-for="(i, key) in media" 
       :key="key">
-      <button
-        :disabled="mediaStatus.id === 1"
+      <button 
+        :disabled="mediaStatus.id === 1" 
         @click="next(i)">
         <!-- {{ i.url }} -->
         <div v-if="i.mime === 'text/plain'" />
-        <div
-          v-else
+        <div 
+          v-else 
           class="filtered blue">
-
           <media-item :item="i" />
           <!-- <img :src="`data:image/png;base64,${i.url}`" > -->
         </div>
@@ -52,16 +51,23 @@ export default {
       return this.$store.state.media.status[
         this.$store.state.media.activeStatus
       ];
+    },
+    finishedSession() {
+      return this.$store.state.session.finished;
     }
   },
 
   methods: {
     next(item) {
+      console.log("NEXT", this.question);
       this.saveItemToSession({
         answer: item.filename,
         question: this.question.text
       });
-      if (this.availableQuestions.length === 0) return;
+      if (this.availableQuestions.length === 0) {
+        this.setFinishedSession(true);
+        return;
+      }
       this.nextQuestion(this.availableQuestions);
       this.setRandomTemplate();
     },
@@ -78,7 +84,8 @@ export default {
     // },
     ...mapMutations({
       getRandomMedia: "media/getMedia",
-      saveItemToSession: "session/saveItemToSession"
+      saveItemToSession: "session/saveItemToSession",
+      setFinishedSession: "session/setFinishedSession"
     })
   }
 };

@@ -1,8 +1,8 @@
 <template>
   <h1 class="m-16 text-center tracking-tight font-extrabold text-xl">
     <span class="block xl:inline">
-
-      <h1>{{ question.text }}</h1>
+      {{ question }}
+      <!-- <h1>{{ question.text }}</h1> -->
     </span>
   </h1>
 </template>

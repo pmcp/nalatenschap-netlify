@@ -108,7 +108,6 @@ export const state = () => ({
     {
       id: 17,
       text: "Je lijkt er niet helemaal zeker van.",
-
       used: false,
       repeat: 1
     },
@@ -124,10 +123,8 @@ export const state = () => ({
 
 export const mutations = {
   setUsed(state, key) {
-    let list = state.list;
-    list[key].used = true;
-    state.list = [...list];
-    // console.log(state.list);
+    // let list = state.list;
+    state.list[key].used = true;
   },
   subtractRepeat(state, questionId) {
     state.list[questionId].repeat--;
@@ -136,7 +133,8 @@ export const mutations = {
     const max = state.list.filter(item => !item.used);
     // console.log("MAX", max);
     const activeQuestionId = random(0, max.length - 1);
-    state.activeQuestion = activeQuestionId;
+    const id = max[activeQuestionId].id;
+    state.activeQuestion = id;
   }
 };
 
@@ -147,7 +145,6 @@ export const actions = {
     if (activeQuestion.repeat > 0) {
       commit("subtractRepeat", state.activeQuestion);
     } else {
-      1;
       commit("setUsed", state.activeQuestion);
       commit("setNextQuestion");
     }

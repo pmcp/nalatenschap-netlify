@@ -1,6 +1,6 @@
 export const state = () => ({
   sessionId: null,
-
+  finishedSession: false,
   maxQuestions: 6,
   items: [],
   user: {
@@ -32,6 +32,9 @@ export const mutations = {
   },
   setStatus(state, value) {
     state.activeStatus = value;
+  },
+  setFinishedSession(state, value) {
+    state.finishedSession = value;
   }
 };
 

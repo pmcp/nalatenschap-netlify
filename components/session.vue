@@ -39,7 +39,7 @@ export default {
         ...this.$store.state.session.items,
         {
           answer: currentPath,
-          question: this.question.text
+          question: this.question
         }
       ].reverse();
     }
