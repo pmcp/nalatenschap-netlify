@@ -30,6 +30,8 @@ export const mutations = {
   setStatus(state, value) {
     console.log("gonna set status");
     state.activeStatus = value;
+    console.log("state.activeStatus is now", state.activeStatus);
+
     // console.log(
     //   `Status: ${state.activeStatus}: ${state.status[state.activeStatus].text}`
     // );

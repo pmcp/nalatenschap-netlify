@@ -110,7 +110,6 @@ module.exports = {
           },
         });
       }
-      // Need this to make fs work (for the webdav things)
     },
   },
 };

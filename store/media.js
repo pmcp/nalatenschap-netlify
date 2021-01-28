@@ -28,7 +28,6 @@ export const mutations = {
   setImageStyle(state) {
     const randomColorA = Math.floor(Math.random() * 16777215).toString(16);
     const randomColorB = Math.floor(Math.random() * 16777215).toString(16);
-
     const randomRotation = random(0, 360);
     state.imageStyle = `linear-gradient(${randomRotation}deg, #${randomColorA} 0%, #${randomColorB} 100%)`;
   }
