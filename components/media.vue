@@ -1,8 +1,7 @@
 <template>
   <div>
-    {{ status }}
     <div 
-      v-if="items && status === 0"
+      
       class="pmcp-grid"
     >
       <div 

@@ -24,8 +24,8 @@ export const state = () => ({
 });
 
 export const mutations = {
-  toggleFirstRun(state) {
-    state.firstRun = !state.firstRun;
+  setFirstRun(state, val) {
+    state.firstRun = val;
   },
   setStatus(state, value) {
     console.log("gonna set status");
@@ -71,7 +71,7 @@ export const actions = {
     if (item === null && !state.firstRun) {
       // More first run stuff goes here
       console.log(`going for first run`);
-      commit("toggleFirstRun");
+      commit("setFirstRun", false);
     } else {
       // If this is not the first session, we have a question to save
       console.log(
@@ -91,18 +91,17 @@ export const actions = {
     dispatch("media/getMedia", null, { root: true });
 
     // If this is not the first session, get a question
-    console.log("session getting question almost", state.firstRun);
     if (!state.firstRun) {
       console.log("session getting question");
       // More first run stuff goes here
-      commit("questions/getQuestion", null, { root: true });
+      dispatch("questions/getQuestion", null, { root: true });
     }
   },
 
   //
   async sendSession({ state, commit }) {
     console.log("GONNA SEND SESSION");
-    commit("setStatus", 2);
+    commit("setStatus", 0);
     // const res = await this.$axios.get("/.netlify/functions/sendSession", {
     //   params: {
     //     session: JSON.stringify(state.items),

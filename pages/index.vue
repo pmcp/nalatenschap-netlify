@@ -1,6 +1,6 @@
 <template>
   <section>
-    
+    {{ status }}
     <languages id="languages" />
     <welcome id="welcome" />
     <user id="user" />
@@ -9,14 +9,16 @@
     >
       <question id="question" />
       <div 
-        v-if="status.id === 0"
+        v-if="status === 0" 
         id="media" 
         class="relative h-screen">
         <session class="absolute" />
         <media class="absolute" />
       </div>
     </div>
-    <finish v-if="status.id === 2"/>
+    <finish 
+      v-if="status === 2" 
+      class="h-screen"/>
   </section>
 </template>
 
@@ -28,9 +30,7 @@ import { mapState } from "vuex";
 export default {
   computed: {
     status() {
-      return this.$store.state.session.status[
-        this.$store.state.session.activeStatus
-      ];
+      return this.$store.state.session.activeStatus;
     }
   },
   mounted() {

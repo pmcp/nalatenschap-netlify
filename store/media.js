@@ -13,17 +13,14 @@ export const mutations = {
   setBaseMedia(state, item) {
     state.base = item;
   },
-  addToList(state, item) {
-    state.all.push(item);
-  },
   removeFromBase(state, item) {
     console.log("the item to remove", item);
     const newBase = state.base.filter(f => f.uploadCareId != item.uploadCareId);
 
     state.base = newBase;
   },
-  emptyMediaList(state) {
-    state.all = [];
+  setMediaList(state, val) {
+    state.all = val;
   },
   setImageStyle(state) {
     const randomColorA = Math.floor(Math.random() * 16777215).toString(16);
@@ -36,7 +33,7 @@ export const mutations = {
 export const actions = {
   async getMedia({ state, rootState, commit }) {
     // empty the media list first
-    commit("emptyMediaList");
+    commit("setMediaList", []);
 
     // Set imageStyle
     commit("setImageStyle");
@@ -57,14 +54,14 @@ export const actions = {
     console.log("filter based on folder:", items);
 
     // Get random items, as much as the template says we should get
+    const newMedia = [];
     for (let i = 0; i < total; i++) {
       // get a random image of this list
       const itemId = random(0, items.length - 1);
       const file = items[itemId];
       // Add file to the media to be used
       console.log("adding to list:", file);
-      commit("addToList", file);
-
+      newMedia.push(file);
       // Remove it from the long list
       commit("removeFromBase", file);
 
@@ -74,5 +71,7 @@ export const actions = {
         commit("session/setStatus", 0, { root: true });
       }
     }
+
+    commit("setMediaList", newMedia);
   }
 };
