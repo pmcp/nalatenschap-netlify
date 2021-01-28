@@ -1,6 +1,5 @@
 <template>
   <section>
-    {{ status }}
     <languages id="languages" />
     <welcome id="welcome" />
     <user id="user" />
