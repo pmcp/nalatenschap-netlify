@@ -27,9 +27,3 @@ export const mutations = {
     state.active = lang;
   }
 };
-
-// export const actions = {
-//   setNextQuestion(state, max) {
-//     random(0, max)
-//   }
-// }

@@ -1,9 +1,9 @@
 <template>
   <div>
-    FINISHED: {{ $store.state.session.items.length }} of
-    {{ $store.state.session.maxQuestions }}
-    <session v-if="finished" />
-    <button @click="sendSession">Verstuur selectie</button>
+    <h1 class="m-16 text-center tracking-tight font-extrabold text-xl">
+      We done here
+    </h1>
+
   </div>
 </template>
 
@@ -17,17 +17,6 @@ export default {
       default: null
     }
   },
-  computed: {
-    finished() {
-      if (
-        this.$store.state.session.items.length >
-        this.$store.state.session.maxQuestions
-      )
-        return true;
-      return false;
-    }
-  },
-
   methods: {
     ...mapActions({
       sendSession: "session/sendSession"

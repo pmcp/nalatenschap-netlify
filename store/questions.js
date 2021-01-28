@@ -131,7 +131,6 @@ export const mutations = {
   },
   setNextQuestion(state) {
     const max = state.list.filter(item => !item.used);
-    // console.log("MAX", max);
     const activeQuestionId = random(0, max.length - 1);
     const id = max[activeQuestionId].id;
     state.activeQuestion = id;
@@ -139,8 +138,8 @@ export const mutations = {
 };
 
 export const actions = {
-  nextQuestion({ state, commit }, val) {
-    // console.log('getting next question', val);
+  getQuestion({ state, commit }) {
+    console.log("getting question");
     const activeQuestion = state.list[state.activeQuestion];
     if (activeQuestion.repeat > 0) {
       commit("subtractRepeat", state.activeQuestion);
@@ -148,5 +147,13 @@ export const actions = {
       commit("setUsed", state.activeQuestion);
       commit("setNextQuestion");
     }
+  }
+};
+
+export const getters = {
+  activeQuestionText: state => {
+    const availableQuestions = state.list.filter(item => !item.used);
+    if (availableQuestions === 0) return "Ik heb geen vragen meer.";
+    return state.list[state.activeQuestion].text;
   }
 };

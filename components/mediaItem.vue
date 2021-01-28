@@ -1,6 +1,7 @@
 <template>
   <div>
     <div v-if="item">
+      <!-- {{ i }} -->
       <img :src="imageUrl">
     </div>
   </div>
@@ -16,15 +17,15 @@ export default {
   },
   computed: {
     imageUrl() {
-      console.log("https://ucarecdn.com/" + this.item.uploadCareId);
+      // console.log("https://ucarecdn.com/" + this.item.uploadCareId);
       //ucarecdn.com/0d75ce0b-92fa-40f8-bfc8-25006ce25455/montana32_147235561.jpg
-      https: if (this.item)
+      if (this.item.url) {
+        return this.item.url;
+      } else {
         return `https://ucarecdn.com/${this.item.uploadCareId}/${
           this.item.file
         }`;
-      // if (!this.item) return
-      // if (this.item.mime.includes('image'))
-      // return require(`~/static/${this.item.url}`);
+      }
     }
   }
 };

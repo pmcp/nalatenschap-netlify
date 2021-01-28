@@ -1,24 +1,38 @@
 <template>
-  <div 
-    v-if="media && !finishedSession" 
-    class="pmcp-grid">
+  <div>
+    {{ status }}
     <div 
-      v-for="(i, key) in media" 
-      :key="key">
-      <button 
-        :disabled="mediaStatus.id === 1" 
-        @click="next(i)">
-        <!-- {{ i.url }} -->
-        <div v-if="i.mime === 'text/plain'" />
-        <div 
-          v-else 
-          class="filtered blue">
-          <media-item :item="i" />
-          <!-- <img :src="`data:image/png;base64,${i.url}`" > -->
-        </div>
-      </button>
+      v-if="items && status === 0"
+      class="pmcp-grid"
+    >
+      <div 
+        v-for="(i, key) in items" 
+        :class="i.orientation"
+        :key="key">
+        <button 
+          v-if="i" 
+          @click="runFlow(i)">
+          
+          <div v-if="i.mime === 'application/rtf'">
+            ITS A TEXT
+          </div>
+          <div v-else-if="i.mime === 'application/pdf'">
+            ITS A PDF
+          </div>
+          <div v-else-if="i.mime === 'image/tiff'">
+            ITS A TIFF
+          </div>
+          <media-item 
+            
+            :item="i" />
+            <!-- <div 
+            class="filtered blue">
+          </div> -->
+        </button>
+      </div>
     </div>
   </div>
+  
 </template>
 
 <script>
@@ -26,87 +40,27 @@ import { mapMutations } from "vuex";
 import { mapActions } from "vuex";
 
 export default {
-  props: {
-    items: {
-      type: Array,
-      default: null
-    }
-  },
   computed: {
-    availableQuestions() {
-      return this.$store.state.questions.list.filter(item => !item.used);
-    },
-    // TODO: SHOULD BE A GETTER (ALSO USED IN QUESTION.JS)// TODO: SHOULD BE A GETTER (ALSO USED IN QUESTION.JS). THEN I CAN REMOVE AVAILABLEQUESTIONS ALSO
-    question() {
-      if (this.availableQuestions.length === 0)
-        return "Ik heb geen vragen meer.";
-      return this.availableQuestions[
-        this.$store.state.questions.activeQuestion
-      ];
-    },
-    media() {
+    items() {
       return this.$store.state.media.all;
     },
-    mediaStatus() {
-      return this.$store.state.media.status[
-        this.$store.state.media.activeStatus
-      ];
-    },
-    finishedSession() {
-      return this.$store.state.session.finished;
+    status() {
+      return this.$store.state.session.activeStatus;
     }
   },
-
   methods: {
-    next(item) {
-      console.log("NEXT", this.question);
-      this.saveItemToSession({
-        answer: item.filename,
-        question: this.question.text
-      });
-      if (this.availableQuestions.length === 0) {
-        this.setFinishedSession(true);
-        return;
-      }
-      this.nextQuestion(this.availableQuestions);
-      this.setRandomTemplate();
-    },
-
     ...mapActions({
-      getFolders: "media/getFolders",
-      setRandomTemplate: "templates/setRandomTemplate",
-      nextQuestion: "questions/nextQuestion"
-    }),
-    // nextQuestion() {
-    //   if (this.availableQuestions.length === 0) return;
-    //   const activeQuestion = this.$store.state.questions.activeQuestion;
-    //   this.nextQuestion();
-    // },
-    ...mapMutations({
-      getRandomMedia: "media/getMedia",
-      saveItemToSession: "session/saveItemToSession",
-      setFinishedSession: "session/setFinishedSession"
+      runFlow: "session/runFlow"
     })
   }
 };
 </script>
 
 <style scoped>
-/* .pmcp-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(calc(25% - 1rem), 1fr));
-  grid-template-rows: masonry;
-  grid-gap: 1rem;
-} */
-
 .pmcp-grid {
   display: grid;
-  /* grid-template-columns: repeat(auto-fill, calc(20vw - 2rem)); */
-  /* grid-template-columns: repeat(auto-fill, minmax(calc(20% - 2rem), 1fr));
-  grid-auto-rows: 1fr; */
   grid-template-columns: repeat(auto-fill, minmax(calc(25% - 2rem), 1fr));
   grid-auto-rows: 1fr;
-
   /* grid-template-rows: masonry; */
   /* This is better for small screens, once min() is better supported */
   grid-gap: 1rem;
@@ -152,8 +106,15 @@ export default {
   background-blend-mode: screen;
 }
 
-.item {
+.landscape {
+  grid-column: span 2;
+}
+
+.pmcp-grid > *:first-child.landscape {
+  grid-column: span 2;
+}
+/* .item {
   background-image: url(https://unsplash.it/g/500/500?random);
   background-color: rgba(237, 190, 0, 0.85);
-}
+} */
 </style>

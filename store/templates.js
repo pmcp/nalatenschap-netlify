@@ -26,11 +26,9 @@ export const mutations = {
 };
 
 export const actions = {
-  setRandomTemplate({ commit, state, dispatch }, item) {
+  setTemplate({ commit, state, dispatch }, item) {
     const templateId = random(0, state.all.length - 1);
     commit("setRandomTemplate", templateId);
-    console.log(templateId);
-    const numberOfMediaToUse = state.all[templateId].items;
-    dispatch("media/getMedia", { total: numberOfMediaToUse }, { root: true });
+    return;
   }
 };

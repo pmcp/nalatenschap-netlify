@@ -1,89 +1,68 @@
 // const { getDirectoryItems, checkFolder } = require("../plugins/webdav.js");
-import { random } from "lodash";
+import { random, remove } from "lodash";
 
 export const state = () => ({
   base: [],
   all: [],
   activePath: null,
-  folders: [],
-  activeStatus: 0,
-  status: [
-    {
-      id: 0,
-      text: "All good"
-    },
-    {
-      id: 1,
-      text: "Loading media"
-    }
-  ]
+  folders: []
 });
 
 export const mutations = {
   setBaseMedia(state, item) {
     state.base = item;
   },
-  add(state, item) {
+  addToList(state, item) {
     state.all.push(item);
   },
-  setActivePath(state, item) {
-    state.activePath = item;
+  removeFromBase(state, item) {
+    console.log("the item to remove", item);
+    const newBase = state.base.filter(f => f.uploadCareId != item.uploadCareId);
+    console.log("base 4", newBase.length);
+    state.base = newBase;
   },
-  setFolders(state, item) {
-    state.folders = item;
-  },
-  setFolderAsUsed(state, id) {
-    state.folders[id].used = true;
-  },
-  resetMedia(state, id) {
+  emptyMediaList(state) {
     state.all = [];
-  },
-  setStatus(state, id) {
-    state.activeStatus = id;
   }
 };
 
 export const actions = {
-  async getMedia({ state, commit }, { total: total }) {
-    commit("setStatus", 1);
-    commit("resetMedia");
+  async getMedia({ state, rootState, commit }) {
+    console.log("base 1", state.base.length);
+    // empty the media list first
+    commit("emptyMediaList");
+    // Get the total files we need, based on the template
+    const total = rootState.templates.all[rootState.templates.active].items;
 
-    console.log(`All  media file is ${state.base.length}`);
-    // Get a random one
-    const randomMediaItem = state.base[random(0, state.base.length - 1)];
-    console.log(`Got a random Item`, randomMediaItem);
+    // Get a random media item from the total list of media
+    const randomNumber = random(0, state.base.length - 1);
+    console.log("base 2", state.base.length);
+    console.log("base length", state.base.length - 1);
+    console.log({ randomNumber });
+    const randomItem = state.base[random(0, state.base.length - 1)];
+    console.log("base 3", state.base.length);
+    console.log("randomitem", randomItem);
+    // Get all the items with the same folder path
+    const items = state.base.filter(i => i.folder === randomItem.folder);
+    console.log("filter based on folder:", items);
 
-    // filter the media based on the folder of the random item
-    const items = state.base.filter(i => i.folder === randomMediaItem.folder);
-    console.log("got filtered items", items);
-
-    console.log("Starting to get media");
-    console.log("getting media with a total of", total);
-    // Empty media first
-
-    console.log("total of images we need to get", total);
-
+    // Get random items, as much as the template says we should get
     for (let i = 0; i < total; i++) {
-      // get a random image
+      // get a random image of this list
       const itemId = random(0, items.length - 1);
-      // console.log(itemId, items, items.length)
       const file = items[itemId];
-      // remove image from list
+      // Add file to the media to be used
+      console.log("adding to list:", file);
+      commit("addToList", file);
 
-      console.log("the file", file);
-      if (file == undefined) return null;
+      // Remove it from the long list
+      commit("removeFromBase", file);
 
-      commit("setActivePath", file.path);
-      commit("add", file);
-      console.log("going through media", i, total - 1);
+      // If this is the last run, return
       if (i == total - 1) {
-        console.log("finishing up");
+        console.log("Done with getting media, returning");
+        commit("session/setStatus", 0, { root: true });
       }
     }
-    commit("setActivePath", null);
-    commit("setStatus", 0);
-
-    return;
-    // return
   }
 };

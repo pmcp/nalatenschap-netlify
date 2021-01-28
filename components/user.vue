@@ -34,6 +34,8 @@
           <div class="flex justify-center mt-2">
             <button
               v-scroll-to="'#question'"
+              :disabled="!userFormFilledCorrect"
+              :class="{ 'pmcp-disabled': !userFormFilledCorrect }"
               class="bg-black text-white px-8 py-4 w-full font-bold"
             >
               Stel mij een vraag
@@ -47,6 +49,7 @@
 
 <script>
 import { mapMutations } from "vuex";
+import { mapGetters } from "vuex";
 
 export default {
   computed: {
@@ -55,7 +58,10 @@ export default {
     },
     last() {
       return this.$store.state.session.user.last;
-    }
+    },
+    ...mapGetters({
+      userFormFilledCorrect: "session/userFormFilledCorrect"
+    })
   },
 
   methods: {
@@ -66,4 +72,9 @@ export default {
   }
 };
 </script>
-k
+
+<style scoped>
+.pmcp-disabled {
+  opacity: 30%;
+}
+</style>

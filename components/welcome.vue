@@ -7,7 +7,5 @@
     >
       En u bent?
     </button>
-    <!-- <h1 class="py-4">Het Nalatenschap van Kasper Demeulemeester</h1> -->
-    <!-- <h1 class="py-4">Het Nalatenschap van Kasper Demeulemeester</h1> -->
   </div>
 </template>
