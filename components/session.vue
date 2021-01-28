@@ -1,17 +1,14 @@
 <template>
   <div>
-    <pre 
+    <!-- <pre 
       class="text-xl font-bold" 
       style="white-space: pre-wrap">
       <span style="background-color:red;">{{ session }}</span>
-    </pre>
+    </pre> -->
   </div>
 </template>
 
 <script>
-import { mapMutations } from "vuex";
-import { mapActions } from "vuex";
-
 export default {
   props: {
     items: {

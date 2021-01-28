@@ -5,7 +5,8 @@ export const state = () => ({
   base: [],
   all: [],
   activePath: null,
-  folders: []
+  folders: [],
+  imageStyle: null
 });
 
 export const mutations = {
@@ -18,29 +19,39 @@ export const mutations = {
   removeFromBase(state, item) {
     console.log("the item to remove", item);
     const newBase = state.base.filter(f => f.uploadCareId != item.uploadCareId);
-    console.log("base 4", newBase.length);
+
     state.base = newBase;
   },
   emptyMediaList(state) {
     state.all = [];
+  },
+  setImageStyle(state) {
+    const randomColorA = Math.floor(Math.random() * 16777215).toString(16);
+    const randomColorB = Math.floor(Math.random() * 16777215).toString(16);
+
+    const randomRotation = random(0, 360);
+    state.imageStyle = `linear-gradient(${randomRotation}deg, #${randomColorA} 0%, #${randomColorB} 100%)`;
   }
 };
 
 export const actions = {
   async getMedia({ state, rootState, commit }) {
-    console.log("base 1", state.base.length);
     // empty the media list first
     commit("emptyMediaList");
+
+    // Set imageStyle
+    commit("setImageStyle");
+
     // Get the total files we need, based on the template
     const total = rootState.templates.all[rootState.templates.active].items;
 
     // Get a random media item from the total list of media
     const randomNumber = random(0, state.base.length - 1);
-    console.log("base 2", state.base.length);
+
     console.log("base length", state.base.length - 1);
     console.log({ randomNumber });
     const randomItem = state.base[random(0, state.base.length - 1)];
-    console.log("base 3", state.base.length);
+
     console.log("randomitem", randomItem);
     // Get all the items with the same folder path
     const items = state.base.filter(i => i.folder === randomItem.folder);

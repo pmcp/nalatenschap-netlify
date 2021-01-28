@@ -25,9 +25,7 @@
           <media-item 
             
             :item="i" />
-            <!-- <div 
-            class="filtered blue">
-          </div> -->
+     
         </button>
       </div>
     </div>
@@ -36,7 +34,6 @@
 </template>
 
 <script>
-import { mapMutations } from "vuex";
 import { mapActions } from "vuex";
 
 export default {
@@ -77,33 +74,6 @@ export default {
 .pmcp-grid > *:first-child {
   grid-row: 1 / 1;
   grid-column: 1 / 1;
-}
-
-/* test for template */
-.blue {
-  background: #23427b;
-}
-.red {
-  background: #d02631;
-}
-
-.filtered img {
-  width: auto;
-  /* background-blend-mode: screen; */
-  mix-blend-mode: screen;
-  filter: grayscale(100%) contrast(800%);
-  opacity: 1;
-  margin-bottom: -6px;
-}
-
-.item {
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-}
-
-.blend {
-  background-blend-mode: screen;
 }
 
 .landscape {
