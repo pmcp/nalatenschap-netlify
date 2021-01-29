@@ -15,7 +15,7 @@
         </div>
         <div class="mt-12">
           <form 
-            action="/thanks/" 
+            action="/" 
             method="post"   
             netlify
             netlify-honeypot="bot-field"
