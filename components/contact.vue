@@ -11,13 +11,16 @@
             Om u het resultaat te bezorgen hebben we uw gegevens nodig.
             Uw gegevens worden enkel gebruikt voor het versturen van het eindresultaat, noch zullen ze bewaard worden.
           </p>
+          {{ session }}
         </div>
         <div class="mt-12">
           <form 
-            action="#" 
-            method="POST" 
+            action="/thanks" 
+            method="post" 
+            netlify
+            netlify-honeypot="bot-field"
             class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
-          
+            <input type="hidden" name="form-name" value="contactus" />
             <div class="sm:col-span-2">
               <label 
                 for="phone_number" 
@@ -52,7 +55,8 @@
                   @input="setEmail">
               </div>
             </div>
-            
+            <input type="hidden" name="first" value="" />
+            <input type="hidden" name="second" value="contactus" />
             <div class="sm:col-span-2">
               <button 
                 :disabled="!sendFormFilledCorrect" 
@@ -77,6 +81,9 @@ import { mapGetters } from "vuex";
 
 export default {
   computed: {
+    email() {
+      return this.$store.state.session;
+    },
     email() {
       return this.$store.state.session.user.email;
     },
