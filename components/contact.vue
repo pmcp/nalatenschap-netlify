@@ -63,6 +63,7 @@
                   @input="setEmail">
               </div>
             </div>
+            
             <input 
               :value="session.user.first" 
               type="hidden" 
@@ -72,10 +73,11 @@
               type="hidden" 
               name="last" >
             <!-- {{ sessionAsString }} -->
+            
             <textarea 
               :value="sessionAsString" 
               type="hidden" 
-              name="items" />
+              name="session" />
             
             <div class="sm:col-span-2">
               <button 
