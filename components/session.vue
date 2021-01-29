@@ -15,26 +15,10 @@
     <div class="pb-8"> 
       <div 
         v-for="(i, key) in items" 
-        :key="key"
-        class="mt-6 pt-4 flex items-center">
-      
-        <div class="flex-shrink-0">
-          <img 
-            :src="i.url" 
-            class="h-10 w-10 rounded-full" 
-            alt="">
-        </div>
-        <div class="ml-3">
-          <p class="text-sm font-medium text-gray-900">
-            {{ i.question }}
-          </p>
-          <div class="flex space-x-1 text-sm text-gray-500">
-     
-            <span>
-              {{ i.answer }}
-            </span>
-          </div>
-        </div>
+        :key="'endofsession'+key"
+        class="">
+        <session-item :item="i" />
+       
       </div>
     </div>
     

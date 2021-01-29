@@ -11,10 +11,14 @@
         <button 
           v-if="i" 
           @click="runFlow(i)">
-          <div v-if="i.firstLine">
-            {{ i.firstLine }}
+          <div 
+            v-if="i.firstLine" 
+            class="">
+            <!-- {{ i.firstLine }} -->
+            
           </div>
           <media-item 
+            v-else
             :item="i" />
         </button>
       </div>

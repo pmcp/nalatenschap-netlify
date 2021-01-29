@@ -1,7 +1,7 @@
 <template>
   <section>
-    <!-- {{ status }} -->
-    <status />
+    
+    <!-- <status /> -->
     <languages id="languages" />
     <welcome id="welcome" />
     <user id="user" />

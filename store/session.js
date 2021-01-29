@@ -99,7 +99,8 @@ export const actions = {
       commit("saveItemToSession", {
         answer: item.path,
         question: question,
-        url: item.url
+        url: item.url,
+        id: item.uploadCareId
       });
     }
 
