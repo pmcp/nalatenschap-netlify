@@ -21,7 +21,7 @@
             netlify
             netlify-honeypot="bot-field"
             class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
-            @submit="sendForm"
+            
           >
         
         
@@ -135,14 +135,15 @@ export default {
           "\n";
       }
 
-      const formData = {
+      const form = {
         email: this.email,
         phone: this.phone,
         last: this.session.user.last,
         first: this.session.user.first,
         session: content
       };
-      console.log(formData);
+
+      let formData = new FormData(form);
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
