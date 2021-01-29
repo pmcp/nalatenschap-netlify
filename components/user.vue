@@ -18,7 +18,7 @@
               :value="first" 
               type="text" 
               name="first name" 
-              class="py-3 px-4 block w-full focus:ring-gray-500 focus:border-gray-500 border-black border-2" 
+              class="py-3 px-4 block w-full ring-gray-500 focus:ring-gray-500 focus:border-gray-500 border-black border-2"
               placeholder=""
               @input="setFirst">
           </div>
