@@ -2,26 +2,36 @@
   <section>
     
     <!-- <status /> -->
-    <languages id="languages" />
-    <welcome id="welcome" />
-    <user id="user" />
+    <languages 
+      
+      id="languages" />
+    <welcome 
+      
+      id="welcome" />
+    <user 
+      
+      id="user" />
     <div 
       v-if="userFormFilledCorrect">
-      <div class="min-h-screen flex flex-col">
+      <div 
+        
+        class="min-h-screen flex flex-col">
         <question 
-          v-if="status === 0"
+          
           id="question" />
         <div 
-          v-if="status === 0"
+          
           id="media" 
           class="relative min-h-screen">
           <backdrop class="absolute" />
           <media class="absolute" />
         </div>
       </div>
-      <div id="thanks">
+      <div id="thanks"/>
+      <div>
         <session 
           v-if="status === 3" 
+          
           class="min-h-screen" />
         <contact 
           v-if="status === 3" 

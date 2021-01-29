@@ -9,9 +9,7 @@
     <button
       v-scroll-to="'#user'"
       class=" inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium text-white bg-black hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
-
-      
-      Nog even dit...
+      Welkom
     </button>
   </div>
 </template>

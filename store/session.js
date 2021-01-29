@@ -100,7 +100,8 @@ export const actions = {
         answer: item.path,
         question: question,
         url: item.url,
-        id: item.uploadCareId
+        id: item.uploadCareId,
+        filename: item.fileName
       });
     }
 

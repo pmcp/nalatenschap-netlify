@@ -1,6 +1,6 @@
 <template>
   <section id="send">
-    <div class="bg-white py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
+    <div class="bg-white px-4 overflow-hidden sm:px-6 lg:px-8 ">
       <div class="relative max-w-xl mx-auto">
        
         <div class="">
