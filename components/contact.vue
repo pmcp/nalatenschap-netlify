@@ -71,10 +71,12 @@
               :value="session.user.last" 
               type="hidden" 
               name="last" >
-            <input 
+            <!-- {{ sessionAsString }} -->
+            <textarea 
               :value="sessionAsString" 
               type="hidden" 
-              name="items" >
+              name="items" />
+            
             <div class="sm:col-span-2">
               <button 
                 :disabled="!sendFormFilledCorrect" 
@@ -113,6 +115,7 @@ export default {
           "\n" +
           "\n";
       }
+      console.log(content);
       return content;
     },
     session() {

@@ -5,7 +5,7 @@
       class="h-48 w-full object-cover mt-8 mb-8" 
       alt="">
     <div class="flex justify-center items-center w-100 mb-12">
-      <pre class="whitespace-pre-wrap text-sm font-medium">{{ item }}</pre>    
+      <pre class="whitespace-pre-wrap text-xs font-medium">{{ item }}</pre>    
     </div>
     
   </div>
