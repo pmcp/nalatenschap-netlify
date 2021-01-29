@@ -3,6 +3,7 @@
     
     <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-3xl pb-24">
       De Nalatenschap van Kasper Demeulemeester
+      Sectie Gansberg-Koekelhoren
     </h1>
     
     
