@@ -1,13 +1,13 @@
 <template>
   <section id="send">
-    <div class="bg-white px-4 overflow-hidden sm:px-6 lg:px-8 ">
-      <div class="relative max-w-xl mx-auto">
+    <div class="bg-white px-4 overflow-hidden  text-sm font-medium text">
+      <div >
        
         <div class="">
           <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             Nog even dit...
           </h2>
-          <p class="mt-4 text-lg leading-6 text-gray-500">
+          <p class="mt-4 leading-6 text-gray-500">
             Om u het resultaat te bezorgen hebben we uw gegevens nodig.
             Uw gegevens worden enkel gebruikt voor het versturen van het eindresultaat, noch zullen ze bewaard worden.
           </p>
