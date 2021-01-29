@@ -31,15 +31,15 @@
               value="kdm-nalatenschap" >
             <div class="sm:col-span-2">
               <label 
-                for="phone_number" 
+                for="phone" 
                 class="block text-sm font-medium text-gray-700">Telefoonnummer</label>
               <div class="mt-1 relative ">
  
                 <input 
-                  id="phone_number"
+                  id="phone"
                   :value="phone" 
                   type="text" 
-                  name="phone_number" 
+                  name="phone" 
                   autocomplete="tel" 
                   class="py-3 px-4 block w-full focus:ring-gray-500 focus:border-gray-500 border-black border-2" 
                   placeholder=""
@@ -72,7 +72,7 @@
               type="hidden" 
               name="last" >
             <input 
-              :value="session.items" 
+              :value="sessionAsString" 
               type="hidden" 
               name="items" >
             <div class="sm:col-span-2">
@@ -99,6 +99,22 @@ import { mapGetters } from "vuex";
 
 export default {
   computed: {
+    sessionAsString() {
+      let content = "";
+      for (let i = 0; i < this.session.items.length; i++) {
+        content +=
+          i +
+          ". " +
+          this.session.items[i].question +
+          "\n" +
+          this.session.items[i].answer +
+          "\n" +
+          this.session.items[i].id +
+          "\n" +
+          "\n";
+      }
+      return content;
+    },
     session() {
       return this.$store.state.session;
     },
@@ -117,41 +133,41 @@ export default {
     ...mapMutations({
       setPhone: "session/setPhone",
       setEmail: "session/setEmail"
-    }),
-    sendForm(e) {
-      e.preventDefault();
-
-      let content = "";
-      for (let i = 0; i < this.session.items.length; i++) {
-        content +=
-          i +
-          ". " +
-          this.session.items[i].question +
-          "\n" +
-          this.session.items[i].answer +
-          "\n" +
-          this.session.items[i].id +
-          "\n" +
-          "\n";
-      }
-
-      const form = {
-        email: this.email,
-        phone: this.phone,
-        last: this.session.user.last,
-        first: this.session.user.first,
-        session: content
-      };
-
-      let formData = new FormData(form);
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString()
-      })
-        .then(() => console.log("Form successfully submitted"))
-        .catch(error => alert(error));
-    }
+    })
+    //     sendForm(e) {
+    //       e.preventDefault();
+    //
+    //       let content = "";
+    //       for (let i = 0; i < this.session.items.length; i++) {
+    //         content +=
+    //           i +
+    //           ". " +
+    //           this.session.items[i].question +
+    //           "\n" +
+    //           this.session.items[i].answer +
+    //           "\n" +
+    //           this.session.items[i].id +
+    //           "\n" +
+    //           "\n";
+    //       }
+    //
+    //       const form = {
+    //         email: this.email,
+    //         phone: this.phone,
+    //         last: this.session.user.last,
+    //         first: this.session.user.first,
+    //         session: content
+    //       };
+    //
+    //       let formData = new FormData(form);
+    //       fetch("/", {
+    //         method: "POST",
+    //         headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //         body: new URLSearchParams(formData).toString()
+    //       })
+    //         .then(() => console.log("Form successfully submitted"))
+    //         .catch(error => alert(error));
+    //     }
   }
 };
 </script>
