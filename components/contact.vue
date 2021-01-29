@@ -28,7 +28,7 @@
             <input 
               type="hidden" 
               name="form-name" 
-              value="kdm-nalatenschap" >
+              value="kdm-nalatenschap-1" >
             <div class="sm:col-span-2">
               <label 
                 for="phone" 
