@@ -11,7 +11,7 @@
             Om u het resultaat te bezorgen hebben we uw gegevens nodig.
             Uw gegevens worden enkel gebruikt voor het versturen van het eindresultaat, noch zullen ze bewaard worden.
           </p>
-          {{ session }}
+          <!-- {{ session }} -->
         </div>
         <div class="mt-12">
           <form 
@@ -97,7 +97,7 @@ export default {
       return this.$store.state.session.user.email;
     },
     phone() {
-      return this.$store.state.session.user.tel;
+      return this.$store.state.session.user.phone;
     },
     ...mapGetters({
       sendFormFilledCorrect: "session/sendFormFilledCorrect"

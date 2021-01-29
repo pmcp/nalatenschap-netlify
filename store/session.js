@@ -73,7 +73,7 @@ export const actions = {
       console.log(`This was the last question, finishing up`);
       commit("setStatus", 3);
       VueScrollTo.scrollTo("#thanks");
-      // dispatch("sendSession");
+
       return;
     }
 
@@ -116,21 +116,6 @@ export const actions = {
       // More first run stuff goes here
       dispatch("questions/getQuestion", null, { root: true });
     }
-  },
-
-  //
-  async sendSession({ state, commit }) {
-    console.log("GONNA SEND SESSION");
-    commit("setStatus", 0);
-    const res = await this.$axios.get("/.netlify/functions/sendSession", {
-      params: {
-        session: JSON.stringify(state.items),
-        user: JSON.stringify(state.user),
-        finishedAt: date.now()
-      }
-    });
-
-    return;
   }
 };
 
