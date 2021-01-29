@@ -22,12 +22,12 @@
       </div>
     </div>
     
-    <button
+    <!-- <button
       v-scroll-to="'#send'"
       class="bg-black text-white px-8 py-4 w-full font-bold mt-24"
     >
       Stuur mijn resultaat
-    </button>
+    </button> -->
   </div>
 </template>
 
