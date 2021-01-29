@@ -116,12 +116,19 @@ export default {
     sendForm(e) {
       e.preventDefault();
 
-    
-    let content = '';
-    for (let i = 0; i < this.session.item.length; i++) {
-      content +=
-        i + '. ' + this.session.item[i].question + '\n' + this.session.items[i].answer + '\n' + this.session.items[i].id + '\n' ++ '\n';
-    }
+      let content = "";
+      for (let i = 0; i < this.session.item.length; i++) {
+        content +=
+          i +
+          ". " +
+          this.session.item[i].question +
+          "\n" +
+          this.session.items[i].answer +
+          "\n" +
+          this.session.items[i].id +
+          "\n" +
+          "\n";
+      }
 
       const formData = {
         email: this.email,
