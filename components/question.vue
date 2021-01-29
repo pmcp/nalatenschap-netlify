@@ -1,5 +1,5 @@
 <template>
-  <h1 class="m-16 pt-8 text-center tracking-tight font-extrabold text-xl">
+  <h1 class="mt-16 mb-16 pt-8 tracking-tight font-extrabold text-xl">
     <span class="block xl:inline">
       {{ activeQuestionText }}
     </span>

@@ -5,7 +5,7 @@
       <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-3xl pb-4">
         Dank je om dat met ons te delen.
       </h2>
-      <p class="mt-4 text-lg leading-6 text-gray-500">
+      <p class="mt-4  text-sm font-medium leading-6 text-gray-500">
         We vinden het fijn om er voor je te kunnen zijn.
         Wij willen ook iets delen met jou.
         Hieronder vind je de zes elementen uit de Nalatenschap van Kasper Demeulemeester die jouw betekenis dragen.

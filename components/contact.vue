@@ -75,8 +75,8 @@
                 :disabled="!sendFormFilledCorrect" 
                 
                 :class="{ 'pmcp-disabled': !sendFormFilledCorrect }"
-                type="submit"
-                class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium text-white bg-black hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium text-white bg-black hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+                @submit="sendForm">
                 Verstuur mijn selectie
               </button>
             </div>
@@ -112,7 +112,26 @@ export default {
     ...mapMutations({
       setPhone: "session/setPhone",
       setEmail: "session/setEmail"
-    })
+    }),
+    sendForm() {
+      e.preventDefault();
+
+      const formData = {
+        email: this.email,
+        phone: this.phone,
+        last: this.session.user.last,
+        first: this.session.user.first,
+        session: this.session
+      };
+      console.log(formData);
+      // fetch("/", {
+      //   method: "POST",
+      //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      //   body: new URLSearchParams(formData).toString()
+      // })
+      //   .then(() => console.log("Form successfully submitted"))
+      //   .catch(error => alert(error));
+    }
   }
 };
 </script>
