@@ -117,7 +117,7 @@ export default {
       e.preventDefault();
 
       let content = "";
-      for (let i = 0; i < this.session.item.length; i++) {
+      for (let i = 0; i < this.session.items.length; i++) {
         content +=
           i +
           ". " +
