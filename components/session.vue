@@ -1,6 +1,6 @@
 <template>
   <div 
-    class="bg-white py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
+    class="bg-white py-16 px-4 overflow-hidden lg:py-24">
     <div class="pb-4">
       <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-3xl pb-4">
         Dank je om dat met ons te delen.
