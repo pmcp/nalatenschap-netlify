@@ -15,15 +15,15 @@
         </div>
         <div class="mt-12">
           <form 
-            action="/" 
-            method="post"   
+            
             netlify
             netlify-honeypot="bot-field"
-            class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+            class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+            @submit="sendForm">
             <input 
               type="hidden" 
               name="form-name" 
-              value="contactus" >
+              value="kdm-nalatenschap" >
             <div class="sm:col-span-2">
               <label 
                 for="phone_number" 
@@ -73,10 +73,10 @@
             <div class="sm:col-span-2">
               <button 
                 :disabled="!sendFormFilledCorrect" 
-                
                 :class="{ 'pmcp-disabled': !sendFormFilledCorrect }"
                 class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium text-white bg-black hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
-                @submit="sendForm">
+               
+              >
                 Verstuur mijn selectie
               </button>
             </div>
@@ -113,24 +113,31 @@ export default {
       setPhone: "session/setPhone",
       setEmail: "session/setEmail"
     }),
-    sendForm() {
+    sendForm(e) {
       e.preventDefault();
+
+    
+    let content = '';
+    for (let i = 0; i < this.session.item.length; i++) {
+      content +=
+        i + '. ' + this.session.item[i].question + '\n' + this.session.items[i].answer + '\n' + this.session.items[i].id + '\n' ++ '\n';
+    }
 
       const formData = {
         email: this.email,
         phone: this.phone,
         last: this.session.user.last,
         first: this.session.user.first,
-        session: this.session
+        session: content
       };
       console.log(formData);
-      // fetch("/", {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      //   body: new URLSearchParams(formData).toString()
-      // })
-      //   .then(() => console.log("Form successfully submitted"))
-      //   .catch(error => alert(error));
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString()
+      })
+        .then(() => console.log("Form successfully submitted"))
+        .catch(error => alert(error));
     }
   }
 };
