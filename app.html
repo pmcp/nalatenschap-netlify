@@ -4,12 +4,8 @@
 	{{ HEAD }}
   </head>
   <body {{ BODY_ATTRS }}>
-	  <form 
-	  method="post" 
-	  netlify
-	  netlify-honeypot="bot-field"
-	  >
-	  <input type="hidden" name="form-name" value="kdm-nalatenschap" >
+<form name="kdm-nalatenschap" netlify netlify-honeypot="bot-field" hidden> 
+	  
 	  <input type="text" name="phone">
 	  <input name="email" type="email">
 	  <input type="text" name="first">
