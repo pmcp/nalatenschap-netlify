@@ -1,12 +1,13 @@
 <template>
-  <div class="flex flex-col m-4">
+  <div class="flex flex-row mb-8">
     <img 
       :src="imageUrl" 
-      class="h-48 w-full object-cover mt-8 mb-8" 
+      class="w-48 h-auto" 
       alt="">
-    <div class="flex justify-center items-center w-100 mb-12">
+    <div class="flex justify-center items-center w-100 ml-4">
       <pre class="whitespace-pre-wrap text-xs font-medium">{{ item }}</pre>    
     </div>
+    
     
   </div>
   

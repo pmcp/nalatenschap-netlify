@@ -77,7 +77,8 @@
             <textarea 
               :value="sessionAsString" 
               type="hidden" 
-              name="session" />
+              name="session"
+              class="opacity-0" />
             
             <div class="sm:col-span-2">
               <button 
