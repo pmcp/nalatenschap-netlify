@@ -15,7 +15,7 @@
         </div>
         <div class="mt-12">
           <form 
-            name="kdm-nalatenschap" 
+            name="kdm-nalatenschap-1" 
             action="/thanks" 
             method="post" 
             netlify

@@ -22,7 +22,7 @@
         <div 
           
           id="media" 
-          class="relative min-h-screen">
+          class="relative h-screen">
           <backdrop class="absolute" />
           <media class="absolute" />
         </div>
