@@ -10,10 +10,7 @@
     "generate": "nuxt generate",
     "start": "node sammy.js; serve -s _static -l tcp://0.0.0.0:${PORT:-3000} -n",
     "export": "nuxt export",
-    "serve": "nuxt serve",
-    "postinstall": "netlify-lambda install",
-    "lambda-serve": "netlify-lambda serve functions",
-    "lambda-build": "netlify-lambda build functions"
+    "serve": "nuxt serve"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
