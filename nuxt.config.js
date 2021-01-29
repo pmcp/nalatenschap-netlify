@@ -2,7 +2,7 @@ const pkg = require('./package');
 // import redirectSSL from 'redirect-ssl';
 
 module.exports = {
-  mode: 'universal',
+  
 
   /*
    ** Headers of the page
