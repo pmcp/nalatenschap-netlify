@@ -121,7 +121,7 @@ export default {
         content +=
           i +
           ". " +
-          this.session.item[i].question +
+          this.session.items[i].question +
           "\n" +
           this.session.items[i].answer +
           "\n" +
