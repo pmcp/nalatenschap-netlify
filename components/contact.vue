@@ -63,9 +63,13 @@
               type="hidden" 
               name="first" >
             <input 
+              :value="session.user.last" 
+              type="hidden" 
+              name="last" >
+            <input 
               :value="session.items" 
               type="hidden" 
-              name="second" >
+              name="items" >
             <div class="sm:col-span-2">
               <button 
                 :disabled="!sendFormFilledCorrect" 

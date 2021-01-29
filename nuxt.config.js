@@ -92,6 +92,10 @@ module.exports = {
    ** Build configuration
    */
   target: 'static',
+  generate: {
+    dir: 'dist', // gh_pages/ instead of dist/
+    subFolders: false // HTML files are generated according to the route path
+  },
   build: {
     /*
      ** You can extend webpack config here
