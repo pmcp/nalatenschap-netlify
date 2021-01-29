@@ -1,8 +1,12 @@
+var VueScrollTo = require("vue-scrollto");
+
 export const state = () => ({
   firstRun: false,
   maxQuestions: 6,
   items: [],
   user: {
+    email: "",
+    phone: "",
     first: "",
     last: ""
   },
@@ -19,6 +23,10 @@ export const state = () => ({
     {
       id: 2,
       text: "Selectie versturen"
+    },
+    {
+      id: 3,
+      text: "Alle vragen beantwoord"
     }
   ]
 });
@@ -39,11 +47,17 @@ export const mutations = {
   saveItemToSession(state, item) {
     state.items.push(item);
   },
-  setFirstName(state, event) {
+  setFirst(state, event) {
     state.user.first = event.target.value;
   },
-  setLastName(state, event) {
+  setLast(state, event) {
     state.user.last = event.target.value;
+  },
+  setPhone(state, event) {
+    state.user.phone = event.target.value;
+  },
+  setEmail(state, event) {
+    state.user.email = event.target.value;
   }
 };
 
@@ -57,7 +71,9 @@ export const actions = {
     console.log(`Question ${state.items.length} of ${state.maxQuestions}`);
     if (state.maxQuestions < state.items.length) {
       console.log(`This was the last question, finishing up`);
-      dispatch("sendSession");
+      commit("setStatus", 3);
+      VueScrollTo.scrollTo("#thanks");
+      // dispatch("sendSession");
       return;
     }
 
@@ -77,10 +93,13 @@ export const actions = {
       console.log(
         `the question to save: ${rootGetters["questions/activeQuestionText"]}`
       );
+      const question = rootGetters["questions/activeQuestionText"];
+      console.log(`the question to save is ${question}`);
       console.log(`the item to save:`, { item });
       commit("saveItemToSession", {
-        answer: item.filename,
-        question: rootGetters["questions/activeQuestionText"]
+        answer: item.path,
+        question: question,
+        url: item.url
       });
     }
 
@@ -102,13 +121,13 @@ export const actions = {
   async sendSession({ state, commit }) {
     console.log("GONNA SEND SESSION");
     commit("setStatus", 0);
-    // const res = await this.$axios.get("/.netlify/functions/sendSession", {
-    //   params: {
-    //     session: JSON.stringify(state.items),
-    //     user: JSON.stringify(state.user),
-    //     finishedAt: date.now()
-    //   }
-    // });
+    const res = await this.$axios.get("/.netlify/functions/sendSession", {
+      params: {
+        session: JSON.stringify(state.items),
+        user: JSON.stringify(state.user),
+        finishedAt: date.now()
+      }
+    });
 
     return;
   }
@@ -121,6 +140,16 @@ export const getters = {
       state.user.first.length > 0 &&
       typeof state.user.last === "string" &&
       state.user.last.length > 0
+    )
+      return true;
+    return false;
+  },
+  sendFormFilledCorrect: state => {
+    if (
+      typeof state.user.email === "string" &&
+      state.user.email.length > 0 &&
+      typeof state.user.phone === "string" &&
+      state.user.phone.length > 0
     )
       return true;
     return false;

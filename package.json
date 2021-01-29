@@ -18,6 +18,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "@nuxtjs/proxy": "^2.1.0",
+    "@tailwindcss/forms": "^0.2.1",
     "cross-env": "^5.2.0",
     "file-system": "^2.2.2",
     "fs": "0.0.1-security",
@@ -34,7 +35,9 @@
     "webdav-fs": "^3.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^8.6.4",
+    "@nuxtjs/tailwindcss": "^3.4.2",
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "autoprefixer": "^9.8.6",
     "babel-eslint": "^8.2.1",
     "eslint": "^5.0.1",
     "eslint-config-prettier": "^3.1.0",
@@ -42,7 +45,8 @@
     "eslint-plugin-prettier": "2.6.2",
     "eslint-plugin-vue": "^4.0.0",
     "nodemon": "^1.11.0",
+    "postcss": "^7.0.35",
     "prettier": "1.14.3",
-    "tailwindcss": "~0.6.6"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
   }
 }

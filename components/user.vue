@@ -1,49 +1,59 @@
 <template>
-  <div class="h-screen flex flex-col content-center justify-center">
-    <div class="flex space-x-4">
-      <div class="mb-8 flex-grow pr-1">
-        <label 
-          for="first_name" 
-          class="block font-bold">Voornaam</label>
-        <div class="mt-1">
-          <input
-            id="first_name"
-            :value="first"
-            type="text"
-            name="first_name"
-            autocomplete="given-name"
-            class="py-3 px-4 block w-full border"
-            @input="setFirstName"
-          >
-        </div>
-      </div>
-      <div class="mb-8 flex-grow pl-1">
-        <label 
-          for="last_name" 
-          class="bloc font-bold"> Achternaam </label>
-        <div class="mt-1">
-          <input
-            id="last_name"
-            :value="last"
-            type="text"
-            name="last_name"
-            autocomplete="family-name"
-            class="py-3 px-4 block w-full border"
-            @input="setLastName"
-          >
-          <div class="flex justify-center mt-2">
-            <button
-              v-scroll-to="'#question'"
-              :disabled="!userFormFilledCorrect"
-              :class="{ 'pmcp-disabled': !userFormFilledCorrect }"
-              class="bg-black text-white px-8 py-4 w-full font-bold"
-            >
-              Stel mij een vraag
-            </button>
+  <div class="min-h-screen flex flex-col content-center justify-center">
+    
+    <div class="mt-12">
+      <form 
+        action="#" 
+        method="POST" 
+        class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+      
+        <div class="sm:col-span-2">
+          <label 
+            for="phone_number" 
+            class="block text-sm font-medium text-gray-700">Voornaam</label>
+          <div class="mt-1 relative ">
+
+            <input 
+              id="phone_number"
+              :value="first" 
+              type="text" 
+              name="first name" 
+              class="py-3 px-4 block w-full focus:ring-gray-500 focus:border-gray-500 border-black border-2" 
+              placeholder=""
+              @input="setFirst">
           </div>
         </div>
-      </div>
+        
+        
+        <div class="sm:col-span-2">
+          <label 
+            for="email" 
+            class="block text-sm font-medium text-gray-700">Achternaam</label>
+          <div class="mt-1">
+            <input 
+              id="email"
+              :value="last" 
+              name="last name" 
+              type="text" 
+              class="py-3 px-4 block w-full  focus:ring-gray-500 focus:border-gray-500 border-black border-2"
+              @input="setLast">
+          </div>
+        </div>
+        
+        <div class="sm:col-span-2">
+          <button 
+            v-scroll-to="'#question'"
+            :disabled="!userFormFilledCorrect"
+            :class="{ 'pmcp-disabled': !userFormFilledCorrect }"
+            class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium text-white bg-black hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+            Laat ons beginnen
+          </button>
+        </div>
+      </form>
     </div>
+    
+    
+    
   </div>
 </template>
 
@@ -66,8 +76,8 @@ export default {
 
   methods: {
     ...mapMutations({
-      setFirstName: "session/setFirstName",
-      setLastName: "session/setLastName"
+      setFirst: "session/setFirst",
+      setLast: "session/setLast"
     })
   }
 };

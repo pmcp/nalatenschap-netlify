@@ -11,20 +11,11 @@
         <button 
           v-if="i" 
           @click="runFlow(i)">
-          
-          <div v-if="i.mime === 'application/rtf'">
-            ITS A TEXT
-          </div>
-          <div v-else-if="i.mime === 'application/pdf'">
-            ITS A PDF
-          </div>
-          <div v-else-if="i.mime === 'image/tiff'">
-            ITS A TIFF
+          <div v-if="i.firstLine">
+            {{ i.firstLine }}
           </div>
           <media-item 
-            
             :item="i" />
-     
         </button>
       </div>
     </div>

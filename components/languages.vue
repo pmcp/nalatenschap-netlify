@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen flex flex-col justify-center items-center">
+  <div class="min-h-screen flex flex-col justify-center items-center">
     <div 
       v-if="allLanguages" 
       class="pmcp-grid p-8 w-full">
@@ -7,7 +7,8 @@
         v-for="(i, key) in allLanguages"
         :key="key"
         :disabled="!i.active"
-        class="border font-extrabold text-xl"
+        :class="{ 'border-gray-200': !i.active }"
+        class="border-black border-2 font-extrabold text-xl disabled"
         @click="setLanguage(i)"
       >
         {{ i.lang }}

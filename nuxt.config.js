@@ -18,11 +18,11 @@ module.exports = {
   },
 
   components: true,
-  /*
+  /*  
    ** Customize the progress-bar color
    */
   loading: { color: '#fff' },
-
+  buildModules: ['@nuxtjs/tailwindcss'],
   // serverMiddleware: [
   //   // 'redirect-ssl',
   //   { path: '/api', handler: '~/api/index.js' },

@@ -20,7 +20,7 @@ export const mutations = {
     state.base = newBase;
   },
   setMediaList(state, val) {
-    state.all = val;
+    state.all = [...val];
   },
   setImageStyle(state) {
     const randomColorA = Math.floor(Math.random() * 16777215).toString(16);

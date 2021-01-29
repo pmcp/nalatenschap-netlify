@@ -1,8 +1,7 @@
 <template>
-  <div 
-    class="bg-white py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
+  <div class="bg-white py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
     <div class="pb-4">
-      <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-3xl pb-4">
+      <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl pb-4">
         Dank je om dat met ons te delen.
       </h2>
       <p class="mt-4 text-lg leading-6 text-gray-500">
@@ -39,8 +38,8 @@
     </div>
     
     <button
-      v-scroll-to="'#send'"
-      class="bg-black text-white px-8 py-4 w-full font-bold mt-24"
+      v-scroll-to="'#question'"
+      class="bg-black text-white px-8 py-4 w-full font-bold"
     >
       Stuur mijn resultaat
     </button>
