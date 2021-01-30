@@ -7,7 +7,7 @@
         method="POST" 
         class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
       
-        <div class="sm:col-span-2">
+        <div class="sm:col-span-1">
           <label 
             for="phone_number" 
             class="block text-sm font-medium text-gray-700">Voornaam</label>
@@ -25,7 +25,7 @@
         </div>
         
         
-        <div class="sm:col-span-2">
+        <div class="sm:col-span-1">
           <label 
             for="email" 
             class="block text-sm font-medium text-gray-700">Achternaam</label>
@@ -40,7 +40,7 @@
           </div>
         </div>
         
-        <div class="sm:col-span-2">
+        <div class="sm:col-span-1">
           <button 
             v-scroll-to="'#question'"
             :disabled="!userFormFilledCorrect"

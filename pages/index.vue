@@ -17,7 +17,6 @@
         
         class="min-h-screen flex flex-col">
         <question 
-          
           id="question" />
         <div 
           
@@ -62,8 +61,8 @@ export default {
     ...mapActions({
       runFlow: "session/runFlow"
     })
-  },
+  }
   // Get the JSON data, and put it in the store (bringing in all media)
-  middleware: "data"
+  // middleware: "data"
 };
 </script>

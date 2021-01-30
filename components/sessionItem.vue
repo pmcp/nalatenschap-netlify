@@ -1,10 +1,10 @@
 <template>
-  <div class="flex flex-row mb-8">
+  <div class="flex flex-row mb-8 items-start">
     <img 
       :src="imageUrl" 
-      class="w-48 h-auto" 
+      class="w-48 h-auto object-contain" 
       alt="">
-    <div class="flex justify-center items-center w-100 ml-4">
+    <div class="flex justify-center items-center w-100 ml-4 h-full" >
       <pre class="whitespace-pre-wrap text-xs font-medium">{{ item }}</pre>    
     </div>
     

@@ -6,10 +6,14 @@ export const state = () => ({
   all: [],
   activePath: null,
   folders: [],
-  imageStyle: null
+  imageStyle: null,
+  excludes: []
 });
 
 export const mutations = {
+  addToExcludes(state, item) {
+    state.excludes.push(item);
+  },
   setBaseMedia(state, item) {
     state.base = item;
   },
@@ -41,37 +45,23 @@ export const actions = {
     // Get the total files we need, based on the template
     const total = rootState.templates.all[rootState.templates.active].items;
 
-    // Get a random media item from the total list of media
-    const randomNumber = random(0, state.base.length - 1);
+    // TODO: add folders to exclude
 
-    console.log("base length", state.base.length - 1);
-    console.log({ randomNumber });
-    const randomItem = state.base[random(0, state.base.length - 1)];
-
-    console.log("randomitem", randomItem);
-    // Get all the items with the same folder path
-    const items = state.base.filter(i => i.folder === randomItem.folder);
-    console.log("filter based on folder:", items);
-
-    // Get random items, as much as the template says we should get
-    const newMedia = [];
-    for (let i = 0; i < total; i++) {
-      // get a random image of this list
-      const itemId = random(0, items.length - 1);
-      const file = items[itemId];
-      // Add file to the media to be used
-      console.log("adding to list:", file);
-      newMedia.push(file);
-      // Remove it from the long list
-      commit("removeFromBase", file);
-
-      // If this is the last run, return
-      if (i == total - 1) {
-        console.log("Done with getting media, returning");
-        commit("session/setStatus", 0, { root: true });
+    // New flow
+    const res = await this.$axios.get("/.netlify/functions/getItems", {
+      params: {
+        total: total,
+        excludes: state.excludes
       }
+    });
+
+    console.log("got res", res);
+    const returnedItems = res.data.items;
+    // Loop through the items and put the uploadCareId in exclude
+    for (let i = 0; i < returnedItems.length; i++) {
+      commit("addToExcludes", returnedItems[i].uploadCareId);
     }
 
-    commit("setMediaList", newMedia);
+    commit("setMediaList", returnedItems);
   }
 };

@@ -3,7 +3,7 @@
     :style="imageStyle"
     class="filtered">
     <img 
-      :src="imageUrl" 
+      :src="imageUrl"
       :style="imageStyle" 
     >
   </div>
@@ -20,8 +20,6 @@ export default {
   },
   computed: {
     imageUrl() {
-      // console.log("https://ucarecdn.com/" + this.item.uploadCareId);
-      //ucarecdn.com/0d75ce0b-92fa-40f8-bfc8-25006ce25455/montana32_147235561.jpg
       if (this.item.url) {
         return this.item.url;
       } else {

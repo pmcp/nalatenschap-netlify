@@ -6,15 +6,15 @@
     >
       <div 
         v-for="(i, key) in items" 
-        :class="i.orientation"
+        :class="classObject(i.orientation, i.firstLine)"
         :key="key">
         <button 
           v-if="i" 
           @click="runFlow(i)">
           <div 
             v-if="i.firstLine" 
-            class="">
-            <!-- {{ i.firstLine }} -->
+            class="text-left hover:border-gray-500 border-black border-2 p-12 bg-white">
+            {{ i.firstLine }}
             
           </div>
           <media-item 
@@ -40,6 +40,15 @@ export default {
     }
   },
   methods: {
+    classObject(orientation, firstLine) {
+      console.log(orientation);
+      return {
+        landscape: orientation === "landscape",
+        portrait: orientation === "portrait",
+        "col-span-full": firstLine,
+        "flex justify-start items-center": firstLine
+      };
+    },
     ...mapActions({
       runFlow: "session/runFlow"
     })
