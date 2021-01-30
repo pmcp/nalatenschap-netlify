@@ -214,12 +214,15 @@ export const actions = {
     const unusedQuestions = state.list.filter(q => !q.used);
     let randomQuestionId;
     // If first question, get one that "can be first"
+    console.log(rootState.session.firstRun);
     if (rootState.session.firstRun) {
+      console.log("first run, only get questions that can be first");
       // TODO: first question can't be repeated in this flow, change?
       const firstQuestions = unusedQuestions.filter(q => q.canBeFirst);
       randomQuestionId =
         firstQuestions[random(0, firstQuestions.length - 1)].id;
     } else if (rootState.session.items == rootState.session.maxQuestions - 1) {
+      console.log("last question, only get questions that can be last");
       // If this is the last question, only use the question that can be last
       const onlyLastQuestions = unusedQuestions.filter(q => q.canBeLast);
       randomQuestionId =
@@ -228,6 +231,7 @@ export const actions = {
       // If the activeQuestion has questions they don't want after this one (excludeFromNext), filter these out
       const excludeFromNext = state.list[state.activeQuestion].excludeFromNext;
       if (excludeFromNext.length > 0) {
+        console.log("Shouldnt ask some questions");
         const withoutTheExcludedQuestions = unusedQuestions.filter(
           q => !excludeFromNext.includes(q.id)
         );
@@ -237,6 +241,7 @@ export const actions = {
             random(0, withoutTheExcludedQuestions.length - 1)
           ].id;
       } else {
+        console.log("Nothhing special, just get a question");
         // If none of the rules apply, just get one of the unused list
         randomQuestionId =
           unusedQuestions[random(0, unusedQuestions.length - 1)].id;

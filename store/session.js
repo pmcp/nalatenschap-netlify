@@ -1,7 +1,7 @@
 var VueScrollTo = require("vue-scrollto");
 
 export const state = () => ({
-  firstRun: false,
+  firstRun: true,
   maxQuestions: 6,
   items: [],
   user: {
@@ -74,10 +74,8 @@ export const actions = {
     }
 
     // If this is the first time we are running, set firstRun to true. Not doing something yet with that first run, but who knows.
-    if (item === null && !state.firstRun) {
-      // More first run stuff goes here
-      commit("setFirstRun", false);
-    } else {
+
+    if (!state.firstRun) {
       // If this is not the first session, we have a question to save
       const question = rootGetters["questions/activeQuestionText"];
       commit("saveItemToSession", {
@@ -97,6 +95,9 @@ export const actions = {
 
     // Get media as last (cos we needed the number of items from template, and we needed to know if we need to repeat the selection based on the question
     dispatch("media/getMedia", null, { root: true });
+
+    // Not the first run anymore
+    commit("setFirstRun", false);
   }
 };
 
