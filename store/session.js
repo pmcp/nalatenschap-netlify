@@ -74,7 +74,6 @@ export const actions = {
     }
 
     // If this is the first time we are running, set firstRun to true. Not doing something yet with that first run, but who knows.
-
     if (!state.firstRun) {
       // If this is not the first session, we have a question to save
       const question = rootGetters["questions/activeQuestionText"];
