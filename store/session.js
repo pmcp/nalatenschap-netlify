@@ -66,36 +66,20 @@ export const actions = {
     // First things first: set the status, so we can hide stuff if necessary
     commit("setStatus", 1);
 
-    console.log("ITEM", item);
     // If this is the last question, we need to stop and send the whole thing
-    console.log(`Question ${state.items.length} of ${state.maxQuestions}`);
     if (state.maxQuestions < state.items.length) {
-      console.log(`This was the last question, finishing up`);
       commit("setStatus", 3);
       VueScrollTo.scrollTo("#thanks");
-
       return;
     }
 
     // If this is the first time we are running, set firstRun to true. Not doing something yet with that first run, but who knows.
-    console.log(
-      `First run: ${state.firstRun} the item that came with it:`,
-      item,
-      `Should i go into first run mode? ${item === null && !state.firstRun}`
-    );
-
     if (item === null && !state.firstRun) {
       // More first run stuff goes here
-      console.log(`going for first run`);
       commit("setFirstRun", false);
     } else {
       // If this is not the first session, we have a question to save
-      console.log(
-        `the question to save: ${rootGetters["questions/activeQuestionText"]}`
-      );
       const question = rootGetters["questions/activeQuestionText"];
-      console.log(`the question to save is ${question}`);
-      console.log(`the item to save:`, { item });
       commit("saveItemToSession", {
         answer: item.path,
         question: question,
@@ -105,18 +89,14 @@ export const actions = {
       });
     }
 
-    // Get a template
+    // Get a template, not really doing much with this yet, except for max number of items
     dispatch("templates/setTemplate", null, { root: true });
 
-    // Based on the template, get media
-    dispatch("media/getMedia", null, { root: true });
+    // Get a question
+    dispatch("questions/getQuestion", null, { root: true });
 
-    // If this is not the first session, get a question
-    if (!state.firstRun) {
-      console.log("session getting question");
-      // More first run stuff goes here
-      dispatch("questions/getQuestion", null, { root: true });
-    }
+    // Get media as last (cos we needed the number of items from template, and we needed to know if we need to repeat the selection based on the question
+    dispatch("media/getMedia", null, { root: true });
   }
 };
 
