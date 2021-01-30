@@ -40,8 +40,17 @@ export const actions = {
     if (
       rootState.questions.list[rootState.questions.activeQuestion]
         .repeatSelection
-    )
+    ) {
+      // Copy the list,  and then  empty it
+      const mediaListToRepeat = [...state.all];
+      commit("setMediaList", []);
+      // Wait a bit before adding the media again
+      setTimeout(function() {
+        commit("setMediaList", mediaListToRepeat);
+      }, 500);
+      c;
       return;
+    }
 
     // empty the media list first
     commit("setMediaList", []);
@@ -53,6 +62,7 @@ export const actions = {
     const total = rootState.templates.all[rootState.templates.active].items;
 
     // Get the items we need from a Netlify Function
+    console.log("state excludes", state.excludes);
     const res = await this.$axios.get("/.netlify/functions/getItems", {
       params: {
         total: total,
