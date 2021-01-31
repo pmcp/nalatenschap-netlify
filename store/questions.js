@@ -232,9 +232,10 @@ export const actions = {
       const excludeFromNext = state.list[state.activeQuestion].excludeFromNext;
       if (excludeFromNext.length > 0) {
         console.log("Shouldnt ask some questions");
-        const withoutTheExcludedQuestions = unusedQuestions.filter(
-          q => !excludeFromNext.includes(q.id)
-        );
+        const withoutTheExcludedQuestions = unusedQuestions.filter(q => {
+          console.log(q);
+          return !excludeFromNext.includes(q.id);
+        });
         // Get a random question out of this list
         randomQuestionId =
           withoutTheExcludedQuestions[

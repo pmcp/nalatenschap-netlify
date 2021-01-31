@@ -2,7 +2,6 @@
   <div 
     :style="imageStyle"
     class="filtered">
-
     <img 
       :src="imageUrl"
       :style="imageStyle" 

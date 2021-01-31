@@ -2,14 +2,14 @@
   <div class="relative pmcp-sessionItem">
     <img 
       :src="imageUrl" 
-      class="p-12 relative z-10 " 
+      class=" relative z-10 " 
       alt="">
     <div class="absolute top-0 flex flex-col justify-center items-center h-full" >
-      <pre 
+      <!-- <pre 
         class="whitespace-pre-wrap text-lg font-medium">
         <span 
         class="bg-white">{{ item }}</span>
-      </pre>    
+      </pre> -->    
     </div>
   </div>
   
@@ -35,7 +35,7 @@ export default {
 };
 </script>
 <style sccoped>
-.pmcp-sessionItem:hover img {
+/* .pmcp-sessionItem:hover img {
   mix-blend-mode: color-burn;
-}
+} */
 </style>

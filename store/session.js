@@ -71,7 +71,7 @@ export const actions = {
     );
 
     // If this is the first time we are running, set firstRun to true. Not doing something yet with that first run, but who knows.
-    if (!state.firstRun) {
+    if (!state.firstRun && item) {
       // If this is not the first session, we have a question to save
       const question = rootGetters["questions/activeQuestionText"];
       commit("saveItemToSession", {
@@ -101,7 +101,11 @@ export const actions = {
     // If this is the last question, we need to stop and send the whole thing
     if (state.maxQuestions == state.items.length) {
       commit("setStatus", 3);
-      VueScrollTo.scrollTo("#thanks");
+      // VueScrollTo.scrollTo("#thanks");
+      // Change page, with results
+      this.$router.push({
+        path: "/done"
+      });
       return;
     }
   }

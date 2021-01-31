@@ -12,11 +12,11 @@
         Door op de knop hier onder te drukken, kan je een oplage van 5 fysieke exemplaren van jouw keuze aanvragen bij de Nalatenschap.
       </p>
     </div>
-    <div class="pb-8 flex flex-row flex-wrap"> 
+    <div class="pb-8 pmcp-grid "> 
       <div 
         v-for="(i, key) in items" 
         :key="'endofsession'+key"
-        class="w-1/2">
+      >
         
         <session-item :item="i" />
        
@@ -41,3 +41,55 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.pmcp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  /* grid-auto-rows: 1fr; */
+  /* grid-template-rows: masonry; */
+  /* This is better for small screens, once min() is better supported */
+  grid-gap: 1rem;
+}
+
+.pmcp-grid::before {
+  content: "";
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.pmcp-grid > *:first-child {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+@media (max-width: 900px) {
+  .pmcp-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-auto-rows: 1fr;
+    grid-template-rows: masonry;
+    /* This is better for small screens, once min() is better supported */
+    grid-gap: 1rem;
+  }
+  .pmcp-grid > div {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .pmcp-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    /* grid-auto-rows: 1fr; */
+    /* grid-template-rows: masonry; */
+    /* This is better for small screens, once min() is better supported */
+    grid-gap: 1rem;
+  }
+  .pmcp-grid > div {
+    grid-column: span 1;
+  }
+}
+</style>

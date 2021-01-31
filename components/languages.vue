@@ -2,7 +2,7 @@
   <div class="min-h-screen flex flex-col justify-center items-center">
     <div 
       v-if="allLanguages" 
-      class="pmcp-grid p-8 w-full">
+      class="pmcp-grid w-full">
       <button
         v-for="(i, key) in allLanguages"
         :key="key"
