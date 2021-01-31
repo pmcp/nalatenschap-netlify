@@ -3,7 +3,7 @@
     :style="imageStyle"
     class="filtered">
     <img 
-      :src="imageUrl"
+      :data-blink-src="imageUrl"
       :style="imageStyle" 
     >
   </div>
