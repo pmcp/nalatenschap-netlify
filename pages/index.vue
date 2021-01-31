@@ -16,7 +16,7 @@
           id="question" />
         <div 
           id="media" 
-          class="relative h-screen">
+          class="relative min-h-screen">
           <backdrop class="absolute" />
           <media class="absolute" />
         </div>
