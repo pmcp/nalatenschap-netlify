@@ -1,14 +1,16 @@
 <template>
-  <div class="flex flex-row mb-8 items-start">
+  <div class="relative pmcp-sessionItem">
     <img 
       :src="imageUrl" 
-      class="w-48 h-auto object-contain" 
+      class=" relative z-10 " 
       alt="">
-    <div class="flex justify-center items-center w-100 ml-4 h-full" >
-      <pre class="whitespace-pre-wrap text-xs font-medium">{{ item }}</pre>    
+    <div class="absolute top-0 flex flex-col justify-center items-center h-full" >
+      <!-- <pre 
+        class="whitespace-pre-wrap text-lg font-medium">
+        <span 
+        class="bg-white">{{ item }}</span>
+      </pre> -->    
     </div>
-    
-    
   </div>
   
 </template>
@@ -32,3 +34,8 @@ export default {
   }
 };
 </script>
+<style sccoped>
+/* .pmcp-sessionItem:hover img {
+  mix-blend-mode: color-burn;
+} */
+</style>

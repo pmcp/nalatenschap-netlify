@@ -16,7 +16,7 @@
         <div class="mt-12">
           <form 
             name="kdm-nalatenschap-1" 
-            action="/thanks" 
+            action="/thanks/" 
             method="post" 
             netlify
             netlify-honeypot="bot-field"

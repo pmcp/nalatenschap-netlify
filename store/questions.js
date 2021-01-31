@@ -8,152 +8,254 @@ export const state = () => ({
       text: "Hoe voel je je vandaag?",
       next: null,
       used: false,
-      repeat: 0
+      repeatSelection: false,
+      canBeFirst: false,
+      excludeFromNext: [],
+      canBeLast: true
     },
     {
       id: 1,
       text: "Wat gaat er op dit moment in je om ?",
       next: null,
       used: false,
-      repeat: 0
+      repeatSelection: false,
+      canBeFirst: true,
+      excludeFromNext: [],
+      canBeLast: false
     },
     {
       id: 2,
       text: "Kun je me meer vertellen over wat je daarover voelt ?",
       next: null,
       used: false,
-      repeat: 0
+      repeatSelection: false,
+      canBeFirst: false,
+      excludeFromNext: [],
+      canBeLast: true
     },
     {
       id: 3,
       text: "Verontschuldigingen zijn niet nodig.",
       next: null,
       used: false,
-      repeat: 0
+      repeatSelection: false,
+      canBeFirst: false,
+      excludeFromNext: [],
+      canBeLast: true
     },
-    { id: 4, text: "ik luister.", next: null, used: false, repeat: 0 },
+    {
+      id: 4,
+      text: "Ik luister.",
+      next: null,
+      used: false,
+      repeatSelection: false,
+      canBeFirst: false,
+      excludeFromNext: [],
+      canBeLast: true
+    },
     {
       id: 5,
       text: "Dat is interessant. Ga door.",
       next: null,
       used: false,
-      repeat: 0
+      repeatSelection: false,
+      canBeFirst: false,
+      excludeFromNext: [],
+      canBeLast: true
     },
     {
       id: 6,
       text: "Wat betekent dat voor je ?",
       next: null,
       used: false,
-      repeat: 0
+      repeatSelection: false,
+      canBeFirst: false,
+      excludeFromNext: [],
+      canBeLast: true
     },
-    { id: 7, text: "Ga door.", next: null, used: false, repeat: 0 },
+    {
+      id: 7,
+      text: "Ga door.",
+      next: null,
+      used: false,
+      repeatSelection: false,
+      canBeFirst: false,
+      excludeFromNext: [],
+      canBeLast: true
+    },
     {
       id: 8,
       text: "Is dat echt altijd zo ?",
       next: null,
       used: false,
-      repeat: 0
+      repeatSelection: false,
+      canBeFirst: false,
+      excludeFromNext: [],
+      canBeLast: true
     },
     {
       id: 9,
       text: "Wat ervaar je op dit moment ?",
       next: null,
       used: false,
-      repeat: 0
+      repeatSelection: false,
+      canBeFirst: true,
+      excludeFromNext: [],
+      canBeLast: false
     },
     {
       id: 10,
       text:
-        "Moeten we oppassen voor de glijbaan van emoties? Of net niet oppassen?",
+        "Moeten we oppassen voor die glijbaan van emoties? Of net niet oppassen?",
       next: null,
       used: false,
-      repeat: 0
+      repeatSelection: false,
+      canBeFirst: false,
+      excludeFromNext: [5],
+      canBeLast: true
     },
-    { id: 11, text: "Als in..?", next: null, used: false, repeat: 0 },
+    {
+      id: 11,
+      text: "Als in..?",
+      next: null,
+      used: false,
+      repeatSelection: false,
+      canBeFirst: false,
+      excludeFromNext: [],
+      canBeLast: true
+    },
     {
       id: 12,
       text: "Ja. Ik weet het. Hoe kan je daar anders tegenaan kijken?",
       next: null,
       used: false,
-      repeat: 0
+      repeatSelection: false,
+      canBeFirst: false,
+      excludeFromNext: [],
+      canBeLast: true
     },
     {
       id: 13,
-      text: "Hoe gaat het daar met je?",
+      text: "Hoe gaat het daar nu met je?",
       next: null,
       used: false,
-      repeat: 0
+      repeatSelection: false,
+      canBeFirst: true,
+      excludeFromNext: [],
+      canBeLast: false
     },
     {
       id: 14,
       text: "Hoe is dat voor je ?",
       next: null,
       used: false,
-      repeat: 0
+      repeatSelection: false,
+      canBeFirst: false,
+      excludeFromNext: [],
+      canBeLast: true
     },
     {
       id: 15,
       text: "Vertel me daar meer over.",
       next: null,
       used: false,
-      repeat: 0
+      repeatSelection: false,
+      canBeFirst: false,
+      excludeFromNext: [],
+      canBeLast: true
     },
     {
       id: 16,
       text: "Wat voor gevoelens heb je hierover ?",
       next: null,
       used: false,
-      repeat: 0
+      repeatSelection: false,
+      canBeFirst: false,
+      excludeFromNext: [],
+      canBeLast: true
     },
     {
       id: 17,
       text: "Je lijkt er niet helemaal zeker van.",
       used: false,
-      repeat: 1
+      repeatSelection: true,
+      canBeFirst: false,
+      excludeFromNext: [11],
+      canBeLast: true
     },
     {
       id: 18,
       text: "Wanneer ben jij jarig?",
       next: null,
       used: false,
-      repeat: 0
+      repeatSelection: false,
+      canBeFirst: false,
+      excludeFromNext: [],
+      canBeLast: true
     }
   ]
 });
 
 export const mutations = {
   setUsed(state, key) {
-    // let list = state.list;
     state.list[key].used = true;
   },
-  subtractRepeat(state, questionId) {
-    state.list[questionId].repeat--;
-  },
-  setNextQuestion(state) {
-    const max = state.list.filter(item => !item.used);
-    const activeQuestionId = random(0, max.length - 1);
-    const id = max[activeQuestionId].id;
+  // subtractrepeatSelection(state, questionId) {
+  //   state.list[questionId].repeatSelection--;
+  // },
+  setActiveQuestion(state, id) {
     state.activeQuestion = id;
   }
 };
 
 export const actions = {
-  getQuestion({ state, commit }) {
-    console.log("getting question");
-    const activeQuestion = state.list[state.activeQuestion];
-    if (activeQuestion.repeat > 0) {
-      commit("subtractRepeat", state.activeQuestion);
+  getQuestion({ state, rootState, commit }) {
+    // Get all unused questions
+    const unusedQuestions = state.list.filter(q => !q.used);
+    let randomQuestionId;
+    // If first question, get one that "can be first"
+    console.log(rootState.session.firstRun);
+    if (rootState.session.firstRun) {
+      console.log("first run, only get questions that can be first");
+      // TODO: first question can't be repeated in this flow, change?
+      const firstQuestions = unusedQuestions.filter(q => q.canBeFirst);
+      randomQuestionId =
+        firstQuestions[random(0, firstQuestions.length - 1)].id;
+    } else if (rootState.session.items == rootState.session.maxQuestions - 1) {
+      console.log("last question, only get questions that can be last");
+      // If this is the last question, only use the question that can be last
+      const onlyLastQuestions = unusedQuestions.filter(q => q.canBeLast);
+      randomQuestionId =
+        onlyLastQuestions[random(0, onlyLastQuestions.length - 1)].id;
     } else {
-      commit("setUsed", state.activeQuestion);
-      commit("setNextQuestion");
+      // If the activeQuestion has questions they don't want after this one (excludeFromNext), filter these out
+      const excludeFromNext = state.list[state.activeQuestion].excludeFromNext;
+      if (excludeFromNext.length > 0) {
+        console.log("Shouldnt ask some questions");
+        const withoutTheExcludedQuestions = unusedQuestions.filter(q => {
+          console.log(q);
+          return !excludeFromNext.includes(q.id);
+        });
+        // Get a random question out of this list
+        randomQuestionId =
+          withoutTheExcludedQuestions[
+            random(0, withoutTheExcludedQuestions.length - 1)
+          ].id;
+      } else {
+        console.log("Nothhing special, just get a question");
+        // If none of the rules apply, just get one of the unused list
+        randomQuestionId =
+          unusedQuestions[random(0, unusedQuestions.length - 1)].id;
+      }
     }
+
+    commit("setActiveQuestion", randomQuestionId);
+    commit("setUsed", randomQuestionId);
   }
 };
 
 export const getters = {
   activeQuestionText: state => {
-    const availableQuestions = state.list.filter(item => !item.used);
-    if (availableQuestions === 0) return "Ik heb geen vragen meer.";
     return state.list[state.activeQuestion].text;
   }
 };

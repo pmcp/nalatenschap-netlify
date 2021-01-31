@@ -13,9 +13,8 @@
           @click="runFlow(i)">
           <div 
             v-if="i.firstLine" 
-            class="text-left hover:border-gray-500 border-black border-2 p-12 bg-white">
-            {{ i.firstLine }}
-            
+            class="text-left hover:border-gray-500 border-black border-2 p-12 bg-white whitespace-pre">
+            {{ i.firstLine }}         
           </div>
           <media-item 
             v-else
@@ -41,7 +40,6 @@ export default {
   },
   methods: {
     classObject(orientation, firstLine) {
-      console.log(orientation);
       return {
         landscape: orientation === "landscape",
         portrait: orientation === "portrait",
@@ -86,8 +84,32 @@ export default {
 .pmcp-grid > *:first-child.landscape {
   grid-column: span 2;
 }
-/* .item {
-  background-image: url(https://unsplash.it/g/500/500?random);
-  background-color: rgba(237, 190, 0, 0.85);
-} */
+
+@media (max-width: 900px) {
+  .pmcp-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-auto-rows: 1fr;
+    grid-template-rows: masonry;
+    /* This is better for small screens, once min() is better supported */
+    grid-gap: 1rem;
+  }
+  .pmcp-grid > div {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .pmcp-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-auto-rows: 1fr;
+    /* grid-template-rows: masonry; */
+    /* This is better for small screens, once min() is better supported */
+    grid-gap: 1rem;
+  }
+  .pmcp-grid > div {
+    grid-column: span 1;
+  }
+}
 </style>

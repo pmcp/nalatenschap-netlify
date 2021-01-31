@@ -36,6 +36,21 @@ export const mutations = {
 
 export const actions = {
   async getMedia({ state, rootState, commit }) {
+    // If the question that was just selected has the rule: repeatSelection: true, then we reuse the existing selection
+    if (
+      rootState.questions.list[rootState.questions.activeQuestion]
+        .repeatSelection
+    ) {
+      // Copy the list,  and then  empty it
+      const mediaListToRepeat = [...state.all];
+      commit("setMediaList", []);
+      // Wait a bit before adding the media again
+      setTimeout(function() {
+        commit("setMediaList", mediaListToRepeat);
+      }, 500);
+      return;
+    }
+
     // empty the media list first
     commit("setMediaList", []);
 
@@ -45,9 +60,7 @@ export const actions = {
     // Get the total files we need, based on the template
     const total = rootState.templates.all[rootState.templates.active].items;
 
-    // TODO: add folders to exclude
-
-    // New flow
+    // Get the items we need from a Netlify Function
     const res = await this.$axios.get("/.netlify/functions/getItems", {
       params: {
         total: total,
@@ -55,9 +68,10 @@ export const actions = {
       }
     });
 
-    console.log("got res", res);
+    // Set the items
     const returnedItems = res.data.items;
-    // Loop through the items and put the uploadCareId in exclude
+
+    // Loop through the items and put the uploadCareId in exclude, we use that to not get the same media items back
     for (let i = 0; i < returnedItems.length; i++) {
       commit("addToExcludes", returnedItems[i].uploadCareId);
     }
