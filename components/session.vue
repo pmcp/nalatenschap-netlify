@@ -12,11 +12,12 @@
         Door op de knop hier onder te drukken, kan je een oplage van 5 fysieke exemplaren van jouw keuze aanvragen bij de Nalatenschap.
       </p>
     </div>
-    <div class="pb-8"> 
+    <div class="pb-8 flex flex-row flex-wrap"> 
       <div 
         v-for="(i, key) in items" 
         :key="'endofsession'+key"
-        class="flex flex-row flex-wrap">
+        class="w-1/2">
+        
         <session-item :item="i" />
        
       </div>

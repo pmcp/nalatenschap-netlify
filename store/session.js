@@ -100,7 +100,6 @@ export const actions = {
 
     // If this is the last question, we need to stop and send the whole thing
     if (state.maxQuestions == state.items.length) {
-      console.log(`We Done here`);
       commit("setStatus", 3);
       VueScrollTo.scrollTo("#thanks");
       return;
