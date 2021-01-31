@@ -3,7 +3,7 @@
     :style="imageStyle"
     class="filtered">
     <img 
-      :data-blink-src="imageUrl"
+      :data-blink-uuid="item.uploadCareId"
       :style="imageStyle" 
     >
   </div>

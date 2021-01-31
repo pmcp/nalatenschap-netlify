@@ -1,6 +1,6 @@
 <template>
   <div>
-    <pre class="text-xs font-medium">
+    <pre class="text-xs font-medium whitespace-pre-wrap">
       {{ items }}
     </pre>
   </div>
