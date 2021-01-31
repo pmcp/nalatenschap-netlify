@@ -14,8 +14,7 @@
           <div 
             v-if="i.firstLine" 
             class="text-left hover:border-gray-500 border-black border-2 p-12 bg-white">
-            {{ i.firstLine }}
-            
+            {{ i.firstLine }}         
           </div>
           <media-item 
             v-else
@@ -41,7 +40,6 @@ export default {
   },
   methods: {
     classObject(orientation, firstLine) {
-      console.log(orientation);
       return {
         landscape: orientation === "landscape",
         portrait: orientation === "portrait",

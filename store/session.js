@@ -66,12 +66,9 @@ export const actions = {
     // First things first: set the status, so we can hide stuff if necessary
     commit("setStatus", 1);
 
-    // If this is the last question, we need to stop and send the whole thing
-    if (state.maxQuestions < state.items.length) {
-      commit("setStatus", 3);
-      VueScrollTo.scrollTo("#thanks");
-      return;
-    }
+    console.log(
+      `We now have ${state.items.length} of a maximum of ${state.maxQuestions} `
+    );
 
     // If this is the first time we are running, set firstRun to true. Not doing something yet with that first run, but who knows.
     if (!state.firstRun) {
@@ -95,8 +92,19 @@ export const actions = {
     // Get media as last (cos we needed the number of items from template, and we needed to know if we need to repeat the selection based on the question
     dispatch("media/getMedia", null, { root: true });
 
+    // Scroll back up to the question
+    VueScrollTo.scrollTo("#question");
+
     // Not the first run anymore
     commit("setFirstRun", false);
+
+    // If this is the last question, we need to stop and send the whole thing
+    if (state.maxQuestions == state.items.length) {
+      console.log(`We Done here`);
+      commit("setStatus", 3);
+      VueScrollTo.scrollTo("#thanks");
+      return;
+    }
   }
 };
 
