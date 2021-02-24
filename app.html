@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html {{ HTML_ATTRS }}>
-	<head {{ HEAD_ATTRS }}>
-		{{ HEAD }}
+  <head {{ HEAD_ATTRS }}>
+	{{ HEAD }}
+	<!-- Script for better image delivery by uploadcare -->
+	<script>
+		   (function(src, cb) {
+			var s = document.createElement('script'); s.setAttribute('src', src);
+			s.onload = cb; (document.head || document.body).appendChild(s);
+		  })('https://ucarecdn.com/libs/blinkloader/3.x/blinkloader.min.js', function() {
+			window.Blinkloader.optimize({
+			  pubkey:'942745c63f64d84377a6',
+			  fadeIn:true,
+			  lazyload:true,
+			  smartCompression:true,
+			  responsive:true,
+			  retina:true,
+			  webp:true
+			});
+		  })
+		</script>
 		<script src="https://cdn.usefathom.com/script.js" data-site="BWXZEXXS" data-spa="auto" defer></script>
-	</head>
-	<body {{ BODY_ATTRS }}>
-		{{ APP }}
-	</body>
+  </head>
+  <body {{ BODY_ATTRS }}>
+	  <form name="kdm-nalatenschap-1" netlify netlify-honeypot="bot-field" hidden> 	  
+	  <input type="text" name="phone">
+	  <input name="email" type="email">
+	  <input type="text" name="first">
+	  <input type="text" name="last" >
+	  <textarea name="session" ></textarea>
+	</form>
+	{{ APP }}
+  </body>
 </html>
