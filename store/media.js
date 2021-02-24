@@ -47,7 +47,7 @@ export const actions = {
       // Wait a bit before adding the media again
       setTimeout(function() {
         commit("setMediaList", mediaListToRepeat);
-      }, 500);
+      }, 2000);
       return;
     }
 

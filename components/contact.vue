@@ -47,7 +47,7 @@
               </div>
             </div>
             
-            
+            <div class="text-center w-full sm:col-span-2 mt-4">- Of -</div>
             <div class="sm:col-span-2">
               <label 
                 for="email" 

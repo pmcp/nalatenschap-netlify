@@ -7,7 +7,7 @@
         v-if="status === 3"
         class="min-h-screen" />
       <contact 
-        v-if="status === 3" 
+       
         class="min-h-screen"/>
     </div>
     

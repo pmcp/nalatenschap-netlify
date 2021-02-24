@@ -1,12 +1,14 @@
 <template>
-  <div class="min-h-screen flex flex-col justify-end items-start pb-12">
+  <div class="bottom-0 fixed bg-white w-full left-0 text-center p-3 text-gray-400 hover:text-black">
     
-    <p 
-      class= "tracking-tight 
-      text-gray-900 
-      text-center 
-      w-full">
-      <a 
+      
+    Contact voor alle vragen: <a 
+      href="mailto:denalatenschap@kasperdemeulemeester.be" 
+      class="underline">denalatenschap@kasperdemeulemeester.be</a>
+      
+      
+      
+      <!-- <a 
         href="http://kasperdemeulemeester.be/" 
         target="_blank"
         class="underline pmcp-underline" 
@@ -16,8 +18,7 @@
         href="https://maartenlauwaert.eu" 
         target="_blank"
         class="underline pmcp-underline">
-        Maarten Lauwaert</a>
-    </p>
+        Maarten Lauwaert</a> -->
     
     
    
