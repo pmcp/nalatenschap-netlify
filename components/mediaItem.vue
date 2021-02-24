@@ -30,7 +30,8 @@ export default {
     },
     imageStyle() {
       return {
-        backgroundImage: this.$store.state.media.imageStyle
+        backgroundImage: this.$store.state.media.imageBackgroundStyle,
+        filter: this.$store.state.media.imageFilterStyle
       };
     }
   }
@@ -50,7 +51,6 @@ export default {
   width: auto;
   /* background-blend-mode: screen; */
   mix-blend-mode: exclusion;
-  filter: grayscale(100%) contrast(800%);
 
   opacity: 1;
   margin-bottom: -6px;

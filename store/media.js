@@ -6,7 +6,12 @@ export const state = () => ({
   all: [],
   activePath: null,
   folders: [],
-  imageStyle: null,
+  imageBackgroundStyle: null,
+  imageFilterStyle: null,
+  filterStyles: [
+    "filter: grayscale(100%) contrast(800%)",
+    "hue-rotate(-10.9turn) contrast(199.2%) brightness(149%) saturate(200%)"
+  ],
   excludes: []
 });
 
@@ -30,7 +35,9 @@ export const mutations = {
     const randomColorA = Math.floor(Math.random() * 16777215).toString(16);
     const randomColorB = Math.floor(Math.random() * 16777215).toString(16);
     const randomRotation = random(0, 360);
-    state.imageStyle = `linear-gradient(${randomRotation}deg, #${randomColorA} 0%, #${randomColorB} 100%)`;
+    state.imageBackgroundStyle = `linear-gradient(${randomRotation}deg, #${randomColorA} 0%, #${randomColorB} 100%)`;
+
+    state.imageFilterStyle = state.filterStyles[Math.round(Math.random())];
   }
 };
 
