@@ -75,7 +75,8 @@ export const actions = {
     for (let i = 0; i < returnedItems.length; i++) {
       commit("addToExcludes", returnedItems[i].uploadCareId);
     }
-
-    commit("setMediaList", returnedItems);
+    setTimeout(function() {
+      commit("setMediaList", returnedItems);
+    }, 2000);
   }
 };
