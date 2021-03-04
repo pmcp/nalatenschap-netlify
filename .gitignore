@@ -94,3 +94,6 @@ sw.*
 
 # Local Netlify folder
 .netlify
+
+# Keys for API's and all
+APIKeys
