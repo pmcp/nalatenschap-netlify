@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen flex flex-col content-center justify-center">
-    <p class="mb-5">De Nalatenschap is een ruimte voor dialoog, in de vorm van een gesprek. De machine zal u zes vragen stellen. Antwoorden gebeurt in de vorm van klikken of afbeeldingen of tekstfragmenten. Wees niet ongerust als wat je ziet op het scherm er vreemd uitziet, of anders dan je verwacht. Dat maakt deel uit van het avontuur.</p>
+    <p class="mb-5">De Nalatenschap biedt ruimte voor ontdekking, in de vorm van een gesprek. De machine zal u zes vragen stellen. Antwoorden kan u door te klikken op afbeeldingen of tekstfragmenten. Wees niet ongerust als wat er gebeurt op het scherm er vreemd uitziet, of anders dan je verwacht. Dat maakt deel uit van het avontuur. Rustig blijven is de boodschap. Aan het eind kan u uw keuze uit de Nalatenschap vastleggen. Veel plezier met de tocht, en tot straks.</p>
     <p class="mb-5">Rustig blijven is de boodschap. Veel plezier met de tocht!</p>
     
     <div class="mt-12">

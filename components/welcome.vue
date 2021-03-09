@@ -2,7 +2,7 @@
   <div class="min-h-screen flex flex-col justify-center items-start">
     
     <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-3xl pb-12">
-      De Nalatenschap van Kasper Demeulemeester
+      {{ getCopy(1) }} Kasper Demeulemeester
     </h1>
     
     
@@ -13,3 +13,15 @@
     </button>
   </div>
 </template>
+<script>
+import { mapMutations } from "vuex";
+import { mapGetters } from "vuex";
+
+export default {
+  computed: {
+    ...mapGetters({
+      getCopy: "copy/getCopy"
+    })
+  }
+};
+</script>

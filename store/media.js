@@ -1,4 +1,4 @@
-// const { getDirectoryItems, checkFolder } = require("../plugins/webdav.js");
+import axios from "axios";
 import { random, remove } from "lodash";
 
 export const state = () => ({
@@ -68,7 +68,7 @@ export const actions = {
     const total = rootState.templates.all[rootState.templates.active].items;
 
     // Get the items we need from a Netlify Function
-    const res = await this.$axios.get("/.netlify/functions/getItems", {
+    const res = await axios.get("/.netlify/functions/getItems", {
       params: {
         total: total,
         excludes: state.excludes

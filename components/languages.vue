@@ -1,17 +1,18 @@
 <template>
   <div class="min-h-screen flex flex-col justify-center items-center">
+    COPY: {{ copy }}
     <div 
       v-if="allLanguages" 
       class="pmcp-grid w-full">
       <button
         v-for="(i, key) in allLanguages"
         :key="key"
-        :disabled="!i.active"
+        
         :class="{ 'border-gray-200': !i.active }"
         class="border-black border-2 font-extrabold text-xl disabled"
         @click="setLanguage(i)"
       >
-        {{ i.lang }}
+        {{ i }}
       </button>
     </div>
   </div>
@@ -23,10 +24,13 @@ import { mapMutations } from "vuex";
 export default {
   computed: {
     activeLanguage() {
-      return this.$store.state.languages.active;
+      return this.$store.state.copy.active;
     },
     allLanguages() {
-      return this.$store.state.languages.all;
+      return this.$store.state.copy.languages;
+    },
+    copy() {
+      return this.$store.state.copy.copy;
     }
   },
 
@@ -36,7 +40,7 @@ export default {
       this.$scrollTo("#welcome");
     },
     ...mapMutations({
-      setActiveLanguage: "languages/setActive"
+      setActiveLanguage: "copy/setActive"
     })
   }
 };

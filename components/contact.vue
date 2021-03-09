@@ -5,7 +5,7 @@
        
         <div class="">
           <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Nog even dit...
+            {{ copy[0][0] }}
           </h2>
           <p class="mt-4 leading-6 text-gray-500">
             Om u het resultaat te bezorgen hebben we uw gegevens nodig.
@@ -123,6 +123,9 @@ export default {
     },
     session() {
       return this.$store.state.session;
+    },
+    copy() {
+      return this.$store.state.copy.copy;
     },
     email() {
       return this.$store.state.session.user.email;
