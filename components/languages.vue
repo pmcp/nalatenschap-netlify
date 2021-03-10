@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen flex flex-col justify-center items-center">
-    COPY: {{ copy }}
+    <!-- COPY: {{ copy }} -->
     <div 
       v-if="allLanguages" 
       class="pmcp-grid w-full">

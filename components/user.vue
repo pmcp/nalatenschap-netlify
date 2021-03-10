@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen flex flex-col content-center justify-center">
-    <p class="mb-5">De Nalatenschap biedt ruimte voor ontdekking, in de vorm van een gesprek. De machine zal u zes vragen stellen. Antwoorden kan u door te klikken op afbeeldingen of tekstfragmenten. Wees niet ongerust als wat er gebeurt op het scherm er vreemd uitziet, of anders dan je verwacht. Dat maakt deel uit van het avontuur. Rustig blijven is de boodschap. Aan het eind kan u uw keuze uit de Nalatenschap vastleggen. Veel plezier met de tocht, en tot straks.</p>
-    <p class="mb-5">Rustig blijven is de boodschap. Veel plezier met de tocht!</p>
+    <p class="mb-5"><copy :id="2"/></p>
+    <p class="mb-5"><copy :id="3"/></p>
     
     <div class="mt-12">
       <form 
@@ -12,7 +12,7 @@
         <div class="sm:col-span-1">
           <label 
             for="phone_number" 
-            class="block text-sm font-medium text-gray-700">Voornaam</label>
+            class="block text-sm font-medium text-gray-700"><copy :id="4"/></label>
           <div class="mt-1 relative ">
 
             <input 
@@ -30,7 +30,7 @@
         <div class="sm:col-span-1">
           <label 
             for="email" 
-            class="block text-sm font-medium text-gray-700">Achternaam</label>
+            class="block text-sm font-medium text-gray-700"><copy :id="5"/></label>
           <div class="mt-1">
             <input 
               id="email"
@@ -48,7 +48,7 @@
             :disabled="!userFormFilledCorrect"
             :class="{ 'pmcp-disabled': !userFormFilledCorrect }"
             class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium text-white bg-black hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
-            Laat ons beginnen
+            <copy :id="7"/>
           </button>
         </div>
       </form>
@@ -89,4 +89,4 @@ export default {
 .pmcp-disabled {
   opacity: 30%;
 }
-</style>
+</style>4

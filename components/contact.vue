@@ -4,12 +4,9 @@
       <div >
        
         <div class="">
-          <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            {{ copy[0][0] }}
-          </h2>
+          <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"/>
           <p class="mt-4 leading-6 text-gray-500">
-            Om u het resultaat te bezorgen hebben we uw gegevens nodig.
-            Uw gegevens worden enkel gebruikt voor het versturen van het eindresultaat, noch zullen ze bewaard worden.
+            <copy :id="10"/>
           </p>
           <!-- {{ session }} -->
         </div>
@@ -32,7 +29,7 @@
             <div class="sm:col-span-2">
               <label 
                 for="phone" 
-                class="block text-sm font-medium text-gray-700">Telefoonnummer</label>
+                class="block text-sm font-medium text-gray-700"><copy :id="11"/></label>
               <div class="mt-1 relative ">
  
                 <input 
@@ -47,11 +44,11 @@
               </div>
             </div>
             
-            <div class="text-center w-full sm:col-span-2 mt-4">- Of -</div>
+            <div class="text-center w-full sm:col-span-2 mt-4">- <copy :id="12"/> -</div>
             <div class="sm:col-span-2">
               <label 
                 for="email" 
-                class="block text-sm font-medium text-gray-700">Email</label>
+                class="block text-sm font-medium text-gray-700"><copy :id="13"/></label>
               <div class="mt-1">
                 <input 
                   id="email"
@@ -87,7 +84,7 @@
                 class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium text-white bg-black hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
                
               >
-                Verstuur mijn selectie
+                <copy :id="14"/>
               </button>
             </div>
           </form>
@@ -124,9 +121,6 @@ export default {
     session() {
       return this.$store.state.session;
     },
-    copy() {
-      return this.$store.state.copy.copy;
-    },
     email() {
       return this.$store.state.session.user.email;
     },
@@ -143,40 +137,6 @@ export default {
       setPhone: "session/setPhone",
       setEmail: "session/setEmail"
     })
-    //     sendForm(e) {
-    //       e.preventDefault();
-    //
-    //       let content = "";
-    //       for (let i = 0; i < this.session.items.length; i++) {
-    //         content +=
-    //           i +
-    //           ". " +
-    //           this.session.items[i].question +
-    //           "\n" +
-    //           this.session.items[i].answer +
-    //           "\n" +
-    //           this.session.items[i].id +
-    //           "\n" +
-    //           "\n";
-    //       }
-    //
-    //       const form = {
-    //         email: this.email,
-    //         phone: this.phone,
-    //         last: this.session.user.last,
-    //         first: this.session.user.first,
-    //         session: content
-    //       };
-    //
-    //       let formData = new FormData(form);
-    //       fetch("/", {
-    //         method: "POST",
-    //         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //         body: new URLSearchParams(formData).toString()
-    //       })
-    //         .then(() => console.log("Form successfully submitted"))
-    //         .catch(error => alert(error));
-    //     }
   }
 };
 </script>

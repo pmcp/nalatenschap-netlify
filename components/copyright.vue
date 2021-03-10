@@ -1,8 +1,7 @@
 <template>
   <div class="bottom-0 fixed bg-white w-full left-0 text-center p-3 text-gray-400 hover:text-black">
     
-      
-    Contact voor alle vragen: <a 
+    <copy :id="15"/>: <a 
       href="mailto:denalatenschap@kasperdemeulemeester.be" 
       class="underline">denalatenschap@kasperdemeulemeester.be</a>
       

@@ -83,7 +83,8 @@ export const actions = {
       });
     }
 
-    dispatch("copy/getAllTranslations", null, { root: true });
+    dispatch("copy/getAllTranslationsCopy", null, { root: true });
+    dispatch("copy/getAllTranslationsQuestions", null, { root: true });
 
     // Get a template, not really doing much with this yet, except for max number of items
     dispatch("templates/setTemplate", null, { root: true });
