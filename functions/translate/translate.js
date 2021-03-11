@@ -1,9 +1,17 @@
+// const items = require('../shared/googleAPI.json');
 // NOTE: Don't forget export GOOGLE_APPLICATION_CREDENTIALS="APIKeys/kasperdm-e7b1934ad128.json"
+// https://answers.netlify.com/t/firebase-include-google-application-credentials-json-file-in-bundle/4054/10
+// TODO:
 // Imports the Google Cloud client library
 const { Translate } = require('@google-cloud/translate').v2;
 
 // Creates a client
-const translate = new Translate();
+const translate = new Translate({
+  projectId: 'kasperdm-c673a,
+  credentials: {
+    client_email: process.env.GCP_CLIENT_EMAIL,
+    private_key: process.env.GCP_PRIVATE_KEY.split("\\n").join("\n")
+  });
 
 async function translateText(text, target) {
   // text = 'The text to translate';
