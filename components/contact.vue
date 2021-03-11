@@ -115,7 +115,6 @@ export default {
           "\n" +
           "\n";
       }
-      console.log(content);
       return content;
     },
     session() {

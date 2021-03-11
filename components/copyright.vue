@@ -4,23 +4,6 @@
     <copy :id="15"/>: <a 
       href="mailto:denalatenschap@kasperdemeulemeester.be" 
       class="underline">denalatenschap@kasperdemeulemeester.be</a>
-      
-      
-      
-      <!-- <a 
-        href="http://kasperdemeulemeester.be/" 
-        target="_blank"
-        class="underline pmcp-underline" 
-      >
-      Kasper Demeulemeester</a> & 
-      <a 
-        href="https://maartenlauwaert.eu" 
-        target="_blank"
-        class="underline pmcp-underline">
-        Maarten Lauwaert</a> -->
-    
-    
-   
   </div>
 </template>
 
