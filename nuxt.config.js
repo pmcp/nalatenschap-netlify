@@ -2,8 +2,7 @@ const pkg = require('./package');
 // import redirectSSL from 'redirect-ssl';
 
 module.exports = {
-  
-
+  mode: 'universal',
   /*
    ** Headers of the page
    */
@@ -53,6 +52,7 @@ module.exports = {
     ['vue-scrollto/nuxt', { duration: 300 }],
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
+    '@nuxt/content'
     // '@nuxtjs/proxy',
   ],
   /*

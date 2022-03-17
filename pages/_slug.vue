@@ -4,8 +4,8 @@
       {{ page.title }}
     </h1>
 
-    <nuxt-content
-      :document="page"
+    <nuxt-content 
+      :document="page" 
       class="prose w-full" />
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
   async asyncData({ $content, params, error }) {
     let page;
     try {
-      page = await $content("pages", "home").fetch();
+      page = await $content("pages", params.slug).fetch();
     } catch (e) {
       error({ message: "Page not found" });
     }
