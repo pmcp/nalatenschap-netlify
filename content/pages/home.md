@@ -10,10 +10,13 @@ To get in contact with the Estate, you can:
 * send a message via [Messenger](https://facebook.com/demeulemeesterkasper) or [Instagram](https:///instagram.com/kasperdemeulemeester)
 * [contact nadine](https://index.nadine.be/artists/kasper-demeulemeester/)
 
-Recent work from the Estate (exhibition, publications,…) can be found on [Instagram](https:///instagram.com/kasperdemeulemeester) and [Facebook](https://facebook.com/demeulemeesterkasper)
+¬ All recent work from the Estate (exhibition, publications,…) can be found on [Instagram](https:///instagram.com/kasperdemeulemeester) and [Facebook](https://facebook.com/demeulemeesterkasper). A selection: 
 
-Ongoing work outside of the Estate in which Kasper is implicated:
+*
 
-* [Project Heimat](https://jakobvandenbroucke.be/)
-* [The Lokal Fototek Foundation](https://instagram.com/lokalfototekfoundation)
-* [nadine vzw](https://index.nadine.be/artists/kasper-demeulemeester/)
+¬ Ongoing work in which the Estate and/or Kasper are implicated:
+
+* Temporary Information Center (with[ Jakob Van den Broucke](https://www.jakobvandenbroucke.be))
+
+  * Related: the project Heimat. [Both](https://jakobvandenbroucke.be/20-1/) [phases](https://jakobvandenbroucke.be/2-21/) of this project are well-documented on [Jakob Van den Broucke](https://www.jakobvandenbroucke.be)'s website.
+* [The Lokal Fototek Foundation](https://instagram.com/lokalfototekfoundation) (with [Vincen Beeckman](https://www.vincenbeeckman.be))
