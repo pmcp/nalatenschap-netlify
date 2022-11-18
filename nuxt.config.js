@@ -92,10 +92,24 @@ module.exports = {
    ** Build configuration
    */
   target: 'static',
+
   generate: {
-    dir: 'dist', // gh_pages/ instead of dist/
-    subFolders: false // HTML files are generated according to the route path
+    routes: function() {
+      const fs = require('fs');
+      const path = require('path');
+      return fs.readdirSync('./content/pages').map(file => {
+        console.log('HERE', file)
+        return {
+          route: `/${path.parse(file).name}`, // Return the slug
+        };
+      });
+    },
   },
+
+
+
+
+
   build: {
     /*
      ** You can extend webpack config here
