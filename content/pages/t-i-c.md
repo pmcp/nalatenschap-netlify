@@ -4,8 +4,6 @@ date: 2023-07-19T12:16:26.332Z
 ---
 ![](https://jakobvandenbroucke.be/wp-content/uploads/2023/05/T-I-C_map-4716-2048x1364.jpg "T I C fields of flowers")
 
-
-
 EEN ABONNEMENT OP T I C KOST 25 EUR. 
 HET REKENINGNUMMER VAN T I C IS BE28973164520320
 MEDEDELING: TIC EN EN.
@@ -39,3 +37,11 @@ T I C 	INFORMATIE OVER INFORMATIE
 T I C 	IETS WAT WORDT
 
 T I C 	DE SPIEGEL WAARIN JIJ JEZELF JAARLIJKS VOOR 25 EURO PER BESTENDIGE OPDRACHT OP 	REKENINGNUMMER BE28973164520320 KAN HERKENNEN.
+
+
+
+### **Uitgave 1: De Derde Fase**
+
+![](https://jakobvandenbroucke.be/wp-content/uploads/2023/07/documentatie_T-I-C_1_De-Derde-Fase-1627-2048x1536.jpg "Vierkleuren")
+
+![](https://jakobvandenbroucke.be/wp-content/uploads/2023/07/documentatie_T-I-C_1_De-Derde-Fase-1635-2048x1364.jpg "Losse A4's")
