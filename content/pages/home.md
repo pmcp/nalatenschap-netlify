@@ -34,7 +34,7 @@ To get in contact with the Estate, you can:
 * Temporary Information Center (with[ Jakob Van den Broucke](https://www.jakobvandenbroucke.be))
 
   * Related: the project Heimat. [All three](https://jakobvandenbroucke.be/20-1/) phases of this project are soon-to-be well-documented on [Jakob Van den Broucke](https://www.jakobvandenbroucke.be)'s website.
-  * Between july 2020 and now, fifteen departments of the T.I.C. have been founded. A comprehensive list can be asked via tijdelijkinformatiecentrum at yahoo dot com The publication and exhibition [DISSEMINATION](https://nicc.be/project/nicc-talk-launch-periodical-disseminatie-by-tijdelijk-informatie-centrum-t-i-c/) functions as a guide and prologue into the T.I.C. organisation.
+  * Between july 2020 and now, fifteen departments of the T.I.C. have been founded. A comprehensive list can be asked via tijdelijkinformatiecentrum at yahoo dot com The publication and exhibition DISSEMINATIE functions as a guide and prologue into the T.I.C. organisation.
 * [Lokal Fototek Foundation](https://instagram.com/lokalfototekfoundation) (with [Vincen Beeckman](https://www.vincenbeeckman.be))
 * [Buratinas](https://index.nadine.be/family_tag/buratinas/) (with [nadine](https://nadine.be) and the captain's collective)
 * [WAB.zone](http://wab.zone)
@@ -43,11 +43,14 @@ To get in contact with the Estate, you can:
 
 ¬ Publications available (get in touch for availability and prices) :
 
+* [](https://vriendenvanbrussel.stackstorage.com/s/allemaalopdeberm_publicatie)Heimat, De Derde Fase
+* [DISSEMINATIE](https://jakobvandenbroucke.be/t-i-c-a-d/)
 * [Allemaal op de Berm](https://vriendenvanbrussel.stackstorage.com/s/allemaalopdeberm_publicatie)
 * [A4's (you for I): euphoria](<* https://index.nadine.be/a4s-you-for-i-euphoria/>)
-* [Heimat, fase 1: De Tocht ](https://index.nadine.be/de-tocht-nr-1-summer-2020/)
 * [Heimat, fase 2: De Verderzetting ](https://index.nadine.be/de-verderzetting-periodical-of-the-project-heimat-2021/)
+* [Heimat, fase 1: De Tocht](https://index.nadine.be/de-tocht-nr-1-summer-2020/)
 * [Correspondentie](https://vriendenvanbrussel.stackstorage.com/s/corresp_trailer) - SOLD OUT 
+* [Autobiografie van een Koer](https://www.instagram.com/p/BvmcixhADRo/) 
 
 \--------------------------------------------------
 
