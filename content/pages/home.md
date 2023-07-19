@@ -12,14 +12,20 @@ To get in contact with the Estate, you can:
 
 \--------------------------------------------------
 
-¬ Most recent work from the Estate (exhibition, publications,…) can be found on [Instagram](https:///instagram.com/kasperdemeulemeester) and [Facebook](https://facebook.com/demeulemeesterkasper). \
+¬ Most recent work from the Estate (exhibitions, publications,…) can be found on [Instagram](https:///instagram.com/kasperdemeulemeester) and [Facebook](https://facebook.com/demeulemeesterkasper). \
    A selection: 
 
-* Temporary Information Center, dep. A4: started in the form of an [article in the magazine of newspaper De Standaard](https://vriendenvanbrussel.stackstorage.com/s/artikel_deStandaard)
-* Publication + Exhibition = A Foray into Concreteness (A4; you for I; euphoria): [link 1 ](https://jakobvandenbroucke.be/22-1/)and[ link 2](https://index.nadine.be/exhibition-publication-a-foray-into-concreteness-a4-you-for-i-euphoria/)
-* Gansberg-Koekelhoren: [public archives](https://www.kasperdemeulemeester.be/create)
-* Contained Contexts Containing (dmk): [exhibition](https://index.nadine.be/contained-contexts-containing-dmk/)
-* Heimat, phase 2: the Continuation: [Heimat, fase 2: de Verderzetting](https://jakobvandenbroucke.be/2-21/)
+* Heimat, The Third Phase : [exhibition and publication](https://index.nadine.be/heimat-the-third-phase/) (July 2023)
+* Everything is Four & A... is for (Temporary Information Center, section Watou & Various Artists) [exhibition and publication](https://index.nadine.be/various-artists-temporary-information-center-section-watou/) (July - September 2023/4)
+* Temporary Information Center, section Moortebeek_BUS 46 : [performance in public space](https://www.instagram.com/p/Cti9jJLN4Ui/) (i.c.w. MUS-E Belgium) (June 2023)
+* T I C : [a yearly subscription](https://jakobvandenbroucke.be/t-i-c/) to all the (forthcoming) work by the different sections of T.I.C. (AS of May 2023)
+* Compilations: text and images from the Estate on [Instagram](https://www.instagram.com/kasperdemeulemeester/). (May 2023)
+* Allemaal op de Berm: [collective performance, exhibition and publication](https://jakobvandenbroucke.be/3-13/) by Temporary Information Center, section The Berm. (September 2022)
+* Temporary Information Center, dep. A4 : started in the form of an [article in the magazine of newspaper De Standaard](https://vriendenvanbrussel.stackstorage.com/s/artikel_deStandaard) (August 2022)
+* Publication + Exhibition = A Foray into Concreteness (A4; you for I; euphoria) : [link 1 ](https://jakobvandenbroucke.be/22-1/)and[ link 2](https://index.nadine.be/exhibition-publication-a-foray-into-concreteness-a4-you-for-i-euphoria/) (February 2022)
+* Gansberg-Koekelhoren : [public archives](https://www.kasperdemeulemeester.be/create) (2013-2021)
+* Contained Contexts Containing (dmk) : [exhibition](https://index.nadine.be/contained-contexts-containing-dmk/) (August 2021)
+* Heimat, phase 2: the Continuation : [Heimat, fase 2: de Verderzetting](https://jakobvandenbroucke.be/2-21/) (July 2021)
 
 \--------------------------------------------------
 
@@ -27,8 +33,8 @@ To get in contact with the Estate, you can:
 
 * Temporary Information Center (with[ Jakob Van den Broucke](https://www.jakobvandenbroucke.be))
 
-  * Related: the project Heimat. [Both](https://jakobvandenbroucke.be/20-1/) phases of this project are well-documented on [Jakob Van den Broucke](https://www.jakobvandenbroucke.be)'s website.
-  * Between july 2020 and now, thirteen departments of the T.I.C. have been founded. A comprehensive list can be asked via tijdelijkinformatiecentrum at yahoo dot com
+  * Related: the project Heimat. [All three](https://jakobvandenbroucke.be/20-1/) phases of this project are soon-to-be well-documented on [Jakob Van den Broucke](https://www.jakobvandenbroucke.be)'s website.
+  * Between july 2020 and now, fifteen departments of the T.I.C. have been founded. A comprehensive list can be asked via tijdelijkinformatiecentrum at yahoo dot com The publication and exhibition [DISSEMINATION](https://nicc.be/project/nicc-talk-launch-periodical-disseminatie-by-tijdelijk-informatie-centrum-t-i-c/) functions as a guide and prologue into the T.I.C. organisation.
 * [Lokal Fototek Foundation](https://instagram.com/lokalfototekfoundation) (with [Vincen Beeckman](https://www.vincenbeeckman.be))
 * [Buratinas](https://index.nadine.be/family_tag/buratinas/) (with [nadine](https://nadine.be) and the captain's collective)
 * [WAB.zone](http://wab.zone)
