@@ -18,7 +18,7 @@ To get in contact with the Estate, you can:
 * Heimat, The Third Phase : [exhibition and publication](https://index.nadine.be/heimat-the-third-phase/) (July 2023)
 * Everything is Four & A... is for (Temporary Information Center, section Watou & Various Artists) [exhibition and publication](https://index.nadine.be/various-artists-temporary-information-center-section-watou/) (July - September 2023/4)
 * Temporary Information Center, section Moortebeek_BUS 46 : [performance in public space](https://www.instagram.com/p/Cti9jJLN4Ui/) (i.c.w. MUS-E Belgium) (June 2023)
-* T I C : [a yearly subscription](https://jakobvandenbroucke.be/t-i-c/) to all the (forthcoming) work by the different sections of T.I.C. (AS of May 2023)
+* T I C : [a yearly subscription](https://kasperdemeulemeester.be/t-i-c/) to all the (forthcoming) work by the different sections of T.I.C. (AS of May 2023)
 * Compilations: text and images from the Estate on [Instagram](https://www.instagram.com/kasperdemeulemeester/). (May 2023)
 * Allemaal op de Berm: [collective performance, exhibition and publication](https://jakobvandenbroucke.be/3-13/) by Temporary Information Center, section The Berm. (September 2022)
 * Temporary Information Center, dep. A4 : started in the form of an [article in the magazine of newspaper De Standaard](https://vriendenvanbrussel.stackstorage.com/s/artikel_deStandaard) (August 2022)
@@ -43,7 +43,8 @@ To get in contact with the Estate, you can:
 
 ¬ Publications available (get in touch for availability and prices) :
 
-* [](https://vriendenvanbrussel.stackstorage.com/s/allemaalopdeberm_publicatie)Heimat, De Derde Fase
+* [](https://vriendenvanbrussel.stackstorage.com/s/allemaalopdeberm_publicatie)Heimat, De Derde Fase[](https://kasperdemeulemeester.be/t-i-c/)
+* [T I C ](https://kasperdemeulemeester.be/t-i-c/)
 * [DISSEMINATIE](https://jakobvandenbroucke.be/t-i-c-a-d/)
 * [Allemaal op de Berm](https://vriendenvanbrussel.stackstorage.com/s/allemaalopdeberm_publicatie)
 * [A4's (you for I): euphoria](<* https://index.nadine.be/a4s-you-for-i-euphoria/>)
