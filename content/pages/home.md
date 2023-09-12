@@ -38,6 +38,9 @@ To get in contact with the Estate, you can:
 * [Lokal Fototek Foundation](https://instagram.com/lokalfototekfoundation) (with [Vincen Beeckman](https://www.vincenbeeckman.be))
 * [Buratinas](https://index.nadine.be/family_tag/buratinas/) (with [nadine](https://nadine.be) and the captain's collective)
 * [WAB.zone](http://wab.zone)
+* [Tropicana](http://instagram.com/tropicanabxl)
+
+  * Started in 2016, this space at the corner of de Hooikaai and the Lakensestraat, next to the KVS theater in the center of Brussels is the longest-running of Kasper's organisational artworks. Currently it is mainly active as a social grocery and foodbank, in collaboration with Femmes d'Algers et d'Ailleurs asbl. In the spring of 2024, works will start at the building, which is owned by the OCMW of the city of Brussels, so the future of this work is, as ever, very uncertain.
 
 \--------------------------------------------------
 
