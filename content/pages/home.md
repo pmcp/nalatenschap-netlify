@@ -18,7 +18,7 @@ To get in contact with the Estate, you can:
 * Heimat, The Third Phase : [exhibition and publication](https://index.nadine.be/heimat-the-third-phase/) (July 2023)
 * Everything is Four & A... is for (Temporary Information Center, section Watou & Various Artists) [exhibition and publication](https://index.nadine.be/various-artists-temporary-information-center-section-watou/) (July - September 2023/4)
 * Temporary Information Center, section Moortebeek_BUS 46 : [performance in public space](https://www.instagram.com/p/Cti9jJLN4Ui/) (i.c.w. MUS-E Belgium) (June 2023)
-* T I C : [a yearly subscription](https://kasperdemeulemeester.be/t-i-c/) to all the (forthcoming) work by the different sections of T.I.C. (AS of May 2023)
+* T I C : [a subscription formula](https://kasperdemeulemeester.be/t-i-c/)  to all the (forthcoming) work by the different sections of T.I.C. (As of May 2023)
 * Compilations: text and images from the Estate on [Instagram](https://www.instagram.com/kasperdemeulemeester/). (May 2023)
 * Allemaal op de Berm: [collective performance, exhibition and publication](https://jakobvandenbroucke.be/3-13/) by Temporary Information Center, section The Berm. (September 2022)
 * Temporary Information Center, dep. A4 : started in the form of an [article in the magazine of newspaper De Standaard](https://vriendenvanbrussel.stackstorage.com/s/artikel_deStandaard) (August 2022)
@@ -34,13 +34,13 @@ To get in contact with the Estate, you can:
 * Temporary Information Center (with[ Jakob Van den Broucke](https://www.jakobvandenbroucke.be))
 
   * Related: the project Heimat. [All three](https://jakobvandenbroucke.be/20-1/) phases of this project are soon-to-be well-documented on [Jakob Van den Broucke](https://www.jakobvandenbroucke.be)'s website.
-  * Between july 2020 and now, fifteen departments of the T.I.C. have been founded. A comprehensive list can be asked via tijdelijkinformatiecentrum at yahoo dot com The publication and exhibition DISSEMINATIE functions as a guide and prologue into the T.I.C. organisation.
-* [Lokal Fototek Foundation](https://instagram.com/lokalfototekfoundation) (with [Vincen Beeckman](https://www.vincenbeeckman.be))
+  * Between july 2020 and now, fifteen sections of T.I.C. have been founded: A4, Akkasie, the Berm, Dissemination, Framing, the Freedom (De Vrijheid), Meerhout, Menen, Mol, Moortebeek, Recreation, Sculpture, Watou, WIP, TTC and 'in oprichting'.  The publication DISSEMINATIE functions as a guide and prologue into the T.I.C. organisation and the T I C [subscription formula](https://kasperdemeulemeester.be/t-i-c/).
+* [Lokal Fototek Foundation](https://instagram.com/lokalfototekfoundation) (with [Vincen Beeckman](https://www.vincenbeeckman.be)) (temporarily on sabbatical)
 * [Buratinas](https://index.nadine.be/family_tag/buratinas/) (with [nadine](https://nadine.be) and the captain's collective)
 * [WAB.zone](http://wab.zone)
 * [Tropicana](http://instagram.com/tropicanabxl)
 
-  * Started in 2016, this space at the corner of de Hooikaai and the Lakensestraat, next to the KVS theater in the center of Brussels is the longest-running of Kasper's organisational artworks. Currently it is mainly active as a social grocery and foodbank, in collaboration with Femmes d'Algers et d'Ailleurs asbl. In the spring of 2024, works will start at the building, which is owned by the OCMW of the city of Brussels, so the future of this work is, as ever, very uncertain.
+  * Started in 2016, this space at the corner of de Hooikaai and the Lakensestraat, next to the KVS theater in the center of Brussels is the longest-running of Kasper's organisational artworks. Currently it is mainly active as a social grocery and foodbank, in collaboration with Femmes d'Algers et d'Ailleurs asbl. In the spring of 2024, works will start at the building, which is owned by the OCMW of the city of Brussels, so the future of this work is, as ever, very uncertain. Works are planned by the OCMW at the beginning of 2024, which would mean the end of the work at this location.
 
 \--------------------------------------------------
 
