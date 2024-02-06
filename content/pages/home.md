@@ -7,14 +7,14 @@ Established at the beginning of 2021, the Estate of (de Nalatenschap van) Kasper
 To get in contact with the Estate, you can:
 
 * e-mail [Timo Becker](<mailto:       estate@kasperdemeulemeester.be>) (who represents the Estate)
-* send a message via [Messenger](https://facebook.com/demeulemeesterkasper) or [Instagram](https:///instagram.com/kasperdemeulemeester)
 * [contact nadine](https://index.nadine.be/artists/kasper-demeulemeester/)
+* Meta media ([Facebook](https://facebook.com/demeulemeesterkasper), [Instagram](https://www.instagram.com/kasperdemeulemeester)) are currently no longer managed by the Estate and can be considered historic artefacts.
 
 \--------------------------------------------------
 
-¬ Most recent work from the Estate (exhibitions, publications,…) can be found on [Instagram](https:///instagram.com/kasperdemeulemeester) and [Facebook](https://facebook.com/demeulemeesterkasper). \
-   A selection: 
+¬ A selection of recent work from the Estate (installations, publications,…) : 
 
+* [HOW NOW, pt. 1](https://jakobvandenbroucke.be/t-i-c/); published as n°4 of [T I C ](https://jakobvandenbroucke.be/t-i-c/)
 * Heimat, The Third Phase : [exhibition and publication](https://index.nadine.be/heimat-the-third-phase/) (July 2023)
 * Everything is Four & A... is for (Temporary Information Center, section Watou & Various Artists) [exhibition and publication](https://index.nadine.be/various-artists-temporary-information-center-section-watou/) (July - September 2023/4)
 * Temporary Information Center, section Moortebeek_BUS 46 : [performance in public space](https://www.instagram.com/p/Cti9jJLN4Ui/) (i.c.w. MUS-E Belgium) (June 2023)
@@ -35,6 +35,7 @@ To get in contact with the Estate, you can:
 
   * Related: the project Heimat. [All three](https://jakobvandenbroucke.be/20-1/) phases of this project are soon-to-be well-documented on [Jakob Van den Broucke](https://www.jakobvandenbroucke.be)'s website.
   * Between july 2020 and now, fifteen sections of T.I.C. have been founded: A4, Akkasie, the Berm, Dissemination, Framing, the Freedom (De Vrijheid), Meerhout, Menen, Mol, Moortebeek, Recreation, Sculpture, Watou, WIP, TTC and 'in oprichting'.  The publication DISSEMINATIE functions as a guide and prologue into the T.I.C. organisation and the T I C [subscription formula](https://kasperdemeulemeester.be/t-i-c/).
+  * The collaboration with Jakob Van den Broucke is and will not be limited to these collaborative entities.
 * [Lokal Fototek Foundation](https://instagram.com/lokalfototekfoundation) (with [Vincen Beeckman](https://www.vincenbeeckman.be)) (temporarily on sabbatical)
 * [Buratinas](https://index.nadine.be/family_tag/buratinas/) (with [nadine](https://nadine.be) and the captain's collective)
 * [WAB.zone](http://wab.zone)
