@@ -20,7 +20,7 @@ To get in contact with the Estate, you can:
 * Temporary Information Center, section Moortebeek_BUS 46 : [performance in public space](https://www.instagram.com/p/Cti9jJLN4Ui/) (i.c.w. MUS-E Belgium) (June 2023)
 * T I C : [a subscription formula](https://kasperdemeulemeester.be/t-i-c/)  to all the (forthcoming) work by the different sections of T.I.C. (As of May 2023)
 * Compilations: text and images from the Estate on [Instagram](https://www.instagram.com/kasperdemeulemeester/). (May 2023)
-* Allemaal op de Berm: [collective performance, exhibition and publication](https://jakobvandenbroucke.be/3-13/) by Temporary Information Center, section The Berm. (September 2022)
+* Allemaal op de Berm: [collective performance, exhibition and publication](https://www.kunstenplatformplanb.be/projecten/archief/uitwijken-zwankendamme/tijdelijk-informatie-centrum-tic) by Temporary Information Center, section The Berm. (September 2022)
 * Temporary Information Center, dep. A4 : started in the form of an [article in the magazine of newspaper De Standaard](https://vriendenvanbrussel.stackstorage.com/s/artikel_deStandaard) (August 2022)
 * Publication + Exhibition = A Foray into Concreteness (A4; you for I; euphoria) : [link 1 ](https://jakobvandenbroucke.be/22-1/)and[ link 2](https://index.nadine.be/exhibition-publication-a-foray-into-concreteness-a4-you-for-i-euphoria/) (February 2022)
 * Gansberg-Koekelhoren : [public archives](https://www.kasperdemeulemeester.be/create) (2013-2021)
