@@ -2,20 +2,26 @@
 title: The Estate of Kasper Demeulemeester
 date: 2022-03-17T15:40:43.176Z
 ---
-Established at the beginning of 2021, the Estate of (de Nalatenschap van) Kasper Demeulemeester is responsible for the work of the retired artist.
-
-To get in contact with the Estate, you can:
-
-* e-mail [Timo Becker](<mailto:       estate@kasperdemeulemeester.be>) (who represents the Estate)
-* [contact nadine](https://index.nadine.be/artists/kasper-demeulemeester/)
-* Meta media ([Facebook](https://facebook.com/demeulemeesterkasper), [Instagram](https://www.instagram.com/kasperdemeulemeester)) are currently no longer managed by the Estate and can be considered historic artefacts.
+Since 2021, *the Estate of (de Nalatenschap van) Kasper Demeulemeester* takes care of the work of Kasper Demeulemeester.
 
 \--------------------------------------------------
 
-¬ A selection of recent work from the Estate (installations, publications,…) : 
+¬ A selection of recent work (installations, publications,…) : 
 
-* [HOW NOW, pt. 1](https://jakobvandenbroucke.be/t-i-c/); published as n°4 of [T I C ](https://jakobvandenbroucke.be/t-i-c/)
-* Heimat, The Third Phase : [exhibition and publication](https://index.nadine.be/heimat-the-third-phase/) (July 2023)
+* [HOW NOW, pt. 1](https://jakobvandenbroucke.be/t-i-c/) : published as n°4 of [T I C ](https://kasperdemeulemeester.be/t-i-c/) 
+
+  * (as part of the *Executive Committee* of *Temporary Information Center, section Moortebeek* (together with[ Jakob Van den Broucke](https://www.jakobvandenbroucke.be)))
+* [NICC x 25](<https://nicc.be/project/nicc-x-25/ >) :
+
+  * (as part of the *Executive Committee* of *Temporary Information Center, section Dissemination* (together with[ Jakob Van den Broucke](https://www.jakobvandenbroucke.be)))
+* *[Tijdelijk Informatie Centrum, afdeling in Oprichting](<https://www.kunstinzicht.be/nieuws/visuele-recap-afdeling-in-oprichting/ >)*
+
+  * published [Entitijd](https://jakobvandenbroucke.be/t-i-c/), as n°3 of [T I C ](https://kasperdemeulemeester.be/t-i-c/) 
+  * an interview with the *Executive Committee* of afdeling in oprichting can be read [here](<https://www.kunstinzicht.be/nieuws/kunstenaars-in-zicht! >)
+* *[Tijdelijk Informatie Centrum, afdeling Mol](https://www.warande.be/programma/7608/zandgrond/hedendaagse-kunst-vanuit-jakob-smits)*
+
+  * as part of [Zandgrond, at De Warande, Turnhout](https://www.warande.be/programma/7608/zandgrond/hedendaagse-kunst-vanuit-jakob-smits)
+* [Heimat, The Third Phase](https://jakobvandenbroucke.be/t-i-c/) : [exhibition and publication](https://index.nadine.be/heimat-the-third-phase/) (July 2023)
 * Everything is Four & A... is for (Temporary Information Center, section Watou & Various Artists) [exhibition and publication](https://index.nadine.be/various-artists-temporary-information-center-section-watou/) (July - September 2023/4)
 * Temporary Information Center, section Moortebeek_BUS 46 : [performance in public space](https://www.instagram.com/p/Cti9jJLN4Ui/) (i.c.w. MUS-E Belgium) (June 2023)
 * T I C : [a subscription formula](https://kasperdemeulemeester.be/t-i-c/)  to all the (forthcoming) work by the different sections of T.I.C. (As of May 2023)
