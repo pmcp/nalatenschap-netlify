@@ -8,17 +8,18 @@ Since 2021, *the Estate of (de Nalatenschap van) Kasper Demeulemeester* takes ca
 
 ¬ A selection of recent work (installations, publications,…) : 
 
-* [HOW NOW, pt. 1](https://jakobvandenbroucke.be/t-i-c/) : published as n°4 of [T I C ](https://kasperdemeulemeester.be/t-i-c/) 
+* [HOW NOW, pt. 1](https://jakobvandenbroucke.be/t-i-c/) (December 2023)[](https://kasperdemeulemeester.be/t-i-c/) 
 
+  * published as n°4 of [T I C](https://kasperdemeulemeester.be/t-i-c/)
   * (as part of the *Executive Committee* of *Temporary Information Center, section Moortebeek* (together with[ Jakob Van den Broucke](https://www.jakobvandenbroucke.be)))
-* [NICC x 25](<https://nicc.be/project/nicc-x-25/ >) :
+* [NICC x 25](<https://nicc.be/project/nicc-x-25/ >) (December 2023)
 
   * (as part of the *Executive Committee* of *Temporary Information Center, section Dissemination* (together with[ Jakob Van den Broucke](https://www.jakobvandenbroucke.be)))
-* *[Tijdelijk Informatie Centrum, afdeling in Oprichting](<https://www.kunstinzicht.be/nieuws/visuele-recap-afdeling-in-oprichting/ >)*
+* *[Tijdelijk Informatie Centrum, afdeling in Oprichting](<https://www.kunstinzicht.be/nieuws/visuele-recap-afdeling-in-oprichting/ >)* (November 2023)
 
   * published [Entitijd](https://jakobvandenbroucke.be/t-i-c/), as n°3 of [T I C ](https://kasperdemeulemeester.be/t-i-c/) 
   * an interview with the *Executive Committee* of afdeling in oprichting can be read [here](<https://www.kunstinzicht.be/nieuws/kunstenaars-in-zicht! >)
-* *[Tijdelijk Informatie Centrum, afdeling Mol](https://www.warande.be/programma/7608/zandgrond/hedendaagse-kunst-vanuit-jakob-smits)*
+* *[Tijdelijk Informatie Centrum, afdeling Mol](https://www.warande.be/programma/7608/zandgrond/hedendaagse-kunst-vanuit-jakob-smits)* (September 2023)
 
   * as part of [Zandgrond, at De Warande, Turnhout](https://www.warande.be/programma/7608/zandgrond/hedendaagse-kunst-vanuit-jakob-smits)
 * [Heimat, The Third Phase](https://jakobvandenbroucke.be/t-i-c/) : [exhibition and publication](https://index.nadine.be/heimat-the-third-phase/) (July 2023)
