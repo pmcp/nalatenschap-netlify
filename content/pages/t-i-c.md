@@ -60,7 +60,7 @@ T I C 	DE SPIEGEL WAARIN JIJ JEZELF JAARLIJKS VOOR 25 EURO PER BESTENDIGE OPDRAC
 
 ![ENTITIJD COVERS](https://ucarecdn.com/f0e15504-d035-4f3f-94b9-ff550abdc210/ "Rubbings of Jes Geys's school building form the texture of the cover.")
 
-### **Uitgave 4:** Alles is 4 / Whathow
+### **Uitgave 2:** Alles is 4 / Whathow
 
 ![PUBLICATION DISPLAY](https://ucarecdn.com/ca919262-1953-4be5-9195-2036979f284f/ "Displayed at Watou / Whathow, 2024")
 
