@@ -38,13 +38,25 @@ T I C 	IETS WAT WORDT
 
 T I C 	DE SPIEGEL WAARIN JIJ JEZELF JAARLIJKS VOOR 25 EURO PER BESTENDIGE OPDRACHT OP 	REKENINGNUMMER BE28973164520320 KAN HERKENNEN.
 
+### **Uitgave 4: HOW NOW**
+
+![HOW NOW PART 1](https://ucarecdn.com/765290d3-7014-4358-b4a6-98ccf3dff26b/ "How Now, featuring the && enentity.")
+
+### **Uitgave 3: Entitijd**
+
+![ENTITIJD COVERS](https://ucarecdn.com/f0e15504-d035-4f3f-94b9-ff550abdc210/ "Rubbings of Jes Geys's school building form the texture of the cover.")
+
+### **Uitgave 4:** Alles is 4 / Whathow
+
+![PUBLICATION DISPLAY](https://ucarecdn.com/ca919262-1953-4be5-9195-2036979f284f/ "Displayed at Watou / Whathow, 2024")
+
 ### **Uitgave 1: De Derde Fase**
 
-![](https://jakobvandenbroucke.be/wp-content/uploads/2023/07/documentatie_T-I-C_1_De-Derde-Fase-1627-2048x1536.jpg "Vierkleuren")
+![DE DERDE FASE VIER KLEUREN COVERS](https://jakobvandenbroucke.be/wp-content/uploads/2023/07/documentatie_T-I-C_1_De-Derde-Fase-1627-2048x1536.jpg "Vierkleuren")
 
-![](https://jakobvandenbroucke.be/wp-content/uploads/2023/07/documentatie_T-I-C_1_De-Derde-Fase-1635-2048x1364.jpg "Losse A4's")
+![DE DERDE FASE BINNENWERK](https://jakobvandenbroucke.be/wp-content/uploads/2023/07/documentatie_T-I-C_1_De-Derde-Fase-1635-2048x1364.jpg "Losse A4's")
 
-### Uitgave 0: Proloog DISSEMINATIE
+### Uitgave 0: Vademecum DISSEMINATIE
 
 ![DISSEMINATIE COVER](https://ucarecdn.com/6ea8cef0-c801-424b-a796-a0e2c8ee953f/-/preview/-/enhance/50/ "DISSEMINATIE COVER")
 
