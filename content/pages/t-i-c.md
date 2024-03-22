@@ -28,11 +28,15 @@ T I C	EEN ABONNEMENT
 
 T I C 	UW VRIEND
 
+![](https://ucarecdn.com/ed9ffdb2-0d9c-4a37-832a-504ad9e38f60/)
+
 T I C 	HET LEVEND ARCHIEF VAN HET TIJDELIJK INFORMATIE CENTRUM
 
 ![](https://ucarecdn.com/706b86de-6b7a-4cdc-b431-8398811ca0e2/)
 
 T I C 	EEN BELOFTE
+
+![](https://ucarecdn.com/a4846f21-4566-4a94-a647-ae332aef2952/)
 
 T I C	DE VRAAG DIE ZICHZELF IN VRAAG BLIJFT STELLEN
 
@@ -46,31 +50,33 @@ T I C 	EEN COLLECTIE
 
 T I C 	INFORMATIE OVER INFORMATIE
 
+![](https://ucarecdn.com/7746d767-4960-4603-99e4-a11a2d0da1bf/)
+
 T I C 	IETS WAT WORDT
 
 ![](https://ucarecdn.com/fc77ade6-0db7-4cae-8d7d-7ccf98fb2e60/)
 
 T I C 	DE SPIEGEL WAARIN JIJ JEZELF JAARLIJKS VOOR 25 EURO PER BESTENDIGE OPDRACHT OP 	REKENINGNUMMER BE28973164520320 KAN HERKENNEN.
 
-### **Uitgave 4: HOW NOW**
+### **UITGAVE 4: HOW NOW**
 
 ![HOW NOW PART 1](https://ucarecdn.com/765290d3-7014-4358-b4a6-98ccf3dff26b/ "How Now, featuring the && enentity.")
 
-### **Uitgave 3: Entitijd**
+### **UITGAVE 3: ENTITIJD**
 
 ![ENTITIJD COVERS](https://ucarecdn.com/f0e15504-d035-4f3f-94b9-ff550abdc210/ "Rubbings of Jes Geys's school building form the texture of the cover.")
 
-### **Uitgave 2:** Alles is 4 / Whathow
+### **UITGAVE 2: ALLES IS 4 / WHATHOW**
 
 ![PUBLICATION DISPLAY](https://ucarecdn.com/ca919262-1953-4be5-9195-2036979f284f/ "Displayed at Watou / Whathow, 2024")
 
-### **Uitgave 1: De Derde Fase**
+### **UITGAVE 1: DE DERDE FASE**
 
 ![DE DERDE FASE VIER KLEUREN COVERS](https://jakobvandenbroucke.be/wp-content/uploads/2023/07/documentatie_T-I-C_1_De-Derde-Fase-1627-2048x1536.jpg "Vierkleuren")
 
 ![DE DERDE FASE BINNENWERK](https://jakobvandenbroucke.be/wp-content/uploads/2023/07/documentatie_T-I-C_1_De-Derde-Fase-1635-2048x1364.jpg "Losse A4's")
 
-### Uitgave 0: Vademecum DISSEMINATIE
+### VADEMECUM DISSEMINATIE
 
 ![DISSEMINATIE COVER](https://ucarecdn.com/6ea8cef0-c801-424b-a796-a0e2c8ee953f/-/preview/-/enhance/50/ "DISSEMINATIE COVER")
 
