@@ -43,18 +43,18 @@ Since 2021, *the Estate of (de Nalatenschap van) Kasper Demeulemeester* takes ca
   * Related: the project Heimat. [All three](https://jakobvandenbroucke.be/20-1/) phases of this project are soon-to-be well-documented on [Jakob Van den Broucke](https://www.jakobvandenbroucke.be)'s website.
   * Between july 2020 and now, fifteen sections of T.I.C. have been founded: A4, Akkasie, the Berm, Dissemination, Framing, the Freedom (De Vrijheid), Meerhout, Menen, Mol, Moortebeek, Recreation, Sculpture, Watou, WIP, TTC and 'in oprichting'.  The publication DISSEMINATIE functions as a guide and prologue into the T.I.C. organisation and the T I C [subscription formula](https://kasperdemeulemeester.be/t-i-c/).
   * The collaboration with Jakob Van den Broucke is and will not be limited to these collaborative entities.
-* [Lokal Fototek Foundation](https://instagram.com/lokalfototekfoundation) (with [Vincen Beeckman](https://www.vincenbeeckman.be)) (temporarily on sabbatical)
-* [Buratinas](https://index.nadine.be/family_tag/buratinas/) (with [nadine](https://nadine.be) and the captain's collective)
+* [Lokal Fototek Foundation](https://instagram.com/lokalfototekfoundation) (with [Vincen Beeckman](https://www.vincenbeeckman.be)) (on sabbatical)
+* [Buratinas](https://index.nadine.be/family_tag/buratinas/) (with [nadine](https://nadine.be) and Buratinas captains loose group)
 * [WAB.zone](http://wab.zone)
 * [Tropicana](http://instagram.com/tropicanabxl)
 
-  * Started in 2016, this space at the corner of de Hooikaai and the Lakensestraat, next to the KVS theater in the center of Brussels is the longest-running of Kasper's organisational artworks. Currently it is mainly active as a social grocery and foodbank, in collaboration with Femmes d'Algers et d'Ailleurs asbl. In the spring of 2024, works will start at the building, which is owned by the OCMW of the city of Brussels, so the future of this work is, as ever, very uncertain. Works are planned by the OCMW at the beginning of 2024, which would mean the end of the work at this location.
+  * Started in 2016, this space at the corner of de Hooikaai and the Lakensestraat, next to the KVS theater in the center of Brussels was the longest-running of Kasper's organisational artworks. In the end it was mainly active as a social grocery and foodbank, in collaboration with *[Femmes d'Algers et d'Ailleurs asbl](< https://www.grand-hospice.brussels › portfolio-item › femmes-dalger-et-dailleurs>)*. In the spring of 2024, works will start at the building where *Tropicana* is housed, which is owned by the OCMW of the city of Brussels. 
 
 \--------------------------------------------------
 
 ¬ Publications available (get in touch for availability and prices) :
 
-* [](https://vriendenvanbrussel.stackstorage.com/s/allemaalopdeberm_publicatie)Heimat, De Derde Fase[](https://kasperdemeulemeester.be/t-i-c/)
+* [](https://vriendenvanbrussel.stackstorage.com/s/allemaalopdeberm_publicatie)Heimat, De Derde Fase[](https://index.nadine.be/heimat-the-third-phase/)
 * [T I C ](https://kasperdemeulemeester.be/t-i-c/)
 * [DISSEMINATIE](https://jakobvandenbroucke.be/t-i-c-a-d/)
 * [Allemaal op de Berm](https://vriendenvanbrussel.stackstorage.com/s/allemaalopdeberm_publicatie)
