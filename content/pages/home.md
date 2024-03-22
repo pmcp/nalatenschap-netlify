@@ -54,7 +54,9 @@ Since 2021, *the Estate of (de Nalatenschap van) Kasper Demeulemeester* takes ca
 
 ¬ Publications available (get in touch for availability and prices) :
 
-* [](https://vriendenvanbrussel.stackstorage.com/s/allemaalopdeberm_publicatie)Heimat, De Derde Fase[](https://index.nadine.be/heimat-the-third-phase/)
+* [Entitijd](https://jakobvandenbroucke.be/t-i-c/)
+* [HOW NOW](https://jakobvandenbroucke.be/t-i-c/)
+* [](https://vriendenvanbrussel.stackstorage.com/s/allemaalopdeberm_publicatie)[Heimat, De Derde Fase](https://index.nadine.be/heimat-the-third-phase/)[](https://index.nadine.be/heimat-the-third-phase/)
 * [T I C ](https://kasperdemeulemeester.be/t-i-c/)
 * [DISSEMINATIE](https://jakobvandenbroucke.be/t-i-c-a-d/)
 * [Allemaal op de Berm](https://vriendenvanbrussel.stackstorage.com/s/allemaalopdeberm_publicatie)
