@@ -42,7 +42,7 @@ T I C 	DE MAP DIE JE KINDEREN ERVEN EN NIET AAN UIT KUNNEN
 
 T I C 	EEN COLLECTIE
 
-![](https://ucarecdn.com/39e66e79-4946-45cc-af08-7c33b0be16bb/)
+![](https://ucarecdn.com/b3ef9952-bb9c-4cd5-b7f3-68604b6b7d93/)
 
 T I C 	INFORMATIE OVER INFORMATIE
 
