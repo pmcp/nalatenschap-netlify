@@ -8,6 +8,13 @@ Since 2021, *the Estate of (de Nalatenschap van) Kasper Demeulemeester* takes ca
 
 ¬ A selection of recent work (installations, publications,…) : 
 
+* [TERMINUS MOORTEBEEK](https://kmplt.org/terminus-moortebeek/) & HOW NOW, pt.2 (June 2024)
+
+  * HOW NOW, pt. 2 published as n° 5 of [T I C](https://kasperdemeulemeester.be/t-i-c/)
+  * (as part of the *Executive Committee* of *Temporary Information Center, section Moortebeek* (together with[ Jakob Van den Broucke](https://www.jakobvandenbroucke.be)))
+* [Boek KINDERWEELDE](https://www.warande.be/programma/8242/kinderweelde-tentoonstelling/tijdelijk-informatie-centrum-afdeling-meerhout-liesbeth-feys)
+
+  * (as part of the *Executive Committee* of *Temporary Information Center, section Meerhout* (together with[ Jakob Van den Broucke](https://www.jakobvandenbroucke.be) and [Liesbeth Feys](https://liesbethfeys.com/)))
 * [HOW NOW, pt. 1](https://jakobvandenbroucke.be/t-i-c/) (December 2023)[](https://kasperdemeulemeester.be/t-i-c/) 
 
   * published as n°4 of [T I C](https://kasperdemeulemeester.be/t-i-c/)
@@ -22,6 +29,7 @@ Since 2021, *the Estate of (de Nalatenschap van) Kasper Demeulemeester* takes ca
 * *[Tijdelijk Informatie Centrum, afdeling Mol](https://www.warande.be/programma/7608/zandgrond/hedendaagse-kunst-vanuit-jakob-smits)* (September 2023)
 
   * as part of [Zandgrond, at De Warande, Turnhout](https://www.warande.be/programma/7608/zandgrond/hedendaagse-kunst-vanuit-jakob-smits)
+  * (as part of the *Executive Committee* of *Temporary Information Center, section Moortebeek* (together with[ Jakob Van den Broucke](https://www.jakobvandenbroucke.be) and [Pieter-Jan Verheyen](https://www.instagram.com/pieterjan.verheyen/)))
 * [Heimat, The Third Phase](https://jakobvandenbroucke.be/t-i-c/) : [exhibition and publication](https://index.nadine.be/heimat-the-third-phase/) (July 2023)
 * Everything is Four & A... is for (Temporary Information Center, section Watou & Various Artists) [exhibition and publication](https://index.nadine.be/various-artists-temporary-information-center-section-watou/) (July - September 2023/4)
 * Temporary Information Center, section Moortebeek_BUS 46 : [performance in public space](https://www.instagram.com/p/Cti9jJLN4Ui/) (i.c.w. MUS-E Belgium) (June 2023)
